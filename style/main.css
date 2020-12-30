@@ -1,0 +1,49 @@
+.frydos-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px;
+}
+.frydos-flex h3 {
+    padding: 0 10px 0 0;
+}
+.frydos-flex textarea {
+    border: 1px solid #bbbbbb;
+    font-size: 17px;
+    border-radius: 2.5px;
+    min-width: 250px;
+}
+.frydos-flex button {
+    border: 1px solid orange;
+    background: orange;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 0 0 10px;
+    border-radius: 5px;
+}
+.frydos-flex button:hover {
+    cursor: pointer;
+}
+.frydos-rating {
+    width: 226px;
+    font-size: 45px;
+    overflow: hidden;
+    direction: rtl;
+    line-height: 1.3em;
+}
+.frydos-rating a {
+    float: none;
+    color: #aaa;
+    text-decoration: none;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}
+.frydos-rating a:hover,
+.frydos-rating a:hover ~ a,
+.frydos-rating a:focus,
+.frydos-rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+}
