@@ -61,6 +61,7 @@ class FryDos {
     }
     async submitSurvey(val, nextView) {
         this.contact = this.getCookie("frydos-client-cookie");
+        const url = window.location.href;
         console.log(this.contact);
         if (this.contact === null || this.contact === "undefined") {
             await this.createContact();
@@ -69,6 +70,7 @@ class FryDos {
             value: val,
             contact: this.contact,
             survey: this.id,
+            url: url,
             previousSubmit: this.submitedId || null
         }
         const url = 'http://localhost:8000/api/project/'+projectID+'/surveys/'+frydosID+'/submits/';
