@@ -1,5 +1,8 @@
 class FryDos {
-    constructor(views, surveyId, projectId, selector) {
+    constructor(views, surveyId, projectId, selector, api) {
+        if (!api) {
+            api = "http://api.frydos.com";
+        }
         this.id = surveyId;
         this.project = projectId;
         this.views = views;
@@ -7,6 +10,7 @@ class FryDos {
         this.contact = null;
         this.submitedId = null;
         this.submitedValue = null;
+        this.api = api;
     }
     renderFirst() {
         this.selector.innerHTML = this.views.first;
@@ -35,7 +39,7 @@ class FryDos {
             customFields: null,
             owner: this.project
         };
-        const response = await fetch('http://localhost:8000/api/project/'+this.project+'/contacts/', {
+        const response = await fetch(`${this.api}/api/project/${this.project}/contacts/`, {
             method: "POST", 
             cache: 'no-cache',
             headers: {
@@ -73,7 +77,7 @@ class FryDos {
             url: locationUrl,
             previousSubmit: this.submitedId || null
         }
-        const url = 'http://localhost:8000/api/project/'+projectID+'/surveys/'+frydosID+'/submits/';
+        const url = `${this.api}/api/project/${projectID}/surveys/${frydosID}/submits/`;
         const response = await fetch(url, {
             method: "POST", 
             cache: 'no-cache',
