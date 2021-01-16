@@ -85,10 +85,16 @@ class FryDos {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
+        })
+        .catch(function (error) {
+            this.selector.innerHTML = '<div class="frydos-flex"><p>Something went wrong with submiting your response. Please try it later...</p></div>';
+            console.error(`Submitting survey errod: ${error}`);
+            return;
         });
         const result = await response.json();
         this.submitedId = result.id;
         this.submitedValue = result.value;
+        this.views['thank-you'] = result.responseHTML;
         this.selector.innerHTML = this.views[nextView];
     }
 }
