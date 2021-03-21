@@ -1,7 +1,7 @@
 class FryDos {
     constructor(views, surveyId, projectId, selector, api) {
         if (!api) {
-            api = "http://api.frydos.com";
+            api = "https://api.frydos.com";
         }
         this.id = surveyId;
         this.project = projectId;
