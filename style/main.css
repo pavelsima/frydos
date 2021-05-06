@@ -47,3 +47,4654 @@
     color: orange;
     cursor: pointer;
 }
+.frydos-loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: frydos-spin 2s linear infinite; /* Safari */
+    animation: frydos-spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes frydos-spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes frydos-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+.frydos-icon .fa,
+.frydos-icon .fas,
+.frydos-icon .far,
+.frydos-icon .fal,
+.frydos-icon .fad,
+.frydos-icon .fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.frydos-icon .fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+.frydos-icon .fa-xs {
+  font-size: 0.75em;
+}
+.frydos-icon .fa-sm {
+  font-size: 0.875em;
+}
+.frydos-icon .fa-1x {
+  font-size: 1em;
+}
+.frydos-icon .fa-2x {
+  font-size: 2em;
+}
+.frydos-icon .fa-3x {
+  font-size: 3em;
+}
+.frydos-icon .fa-4x {
+  font-size: 4em;
+}
+.frydos-icon .fa-5x {
+  font-size: 5em;
+}
+.frydos-icon .fa-6x {
+  font-size: 6em;
+}
+.frydos-icon .fa-7x {
+  font-size: 7em;
+}
+.frydos-icon .fa-8x {
+  font-size: 8em;
+}
+.frydos-icon .fa-9x {
+  font-size: 9em;
+}
+.frydos-icon .fa-10x {
+  font-size: 10em;
+}
+.frydos-icon .fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+.frydos-icon .fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.frydos-icon .fa-ul > li {
+  position: relative;
+}
+.frydos-icon .fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+.frydos-icon .fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+.frydos-icon .fa-pull-left {
+  float: left;
+}
+.frydos-icon .fa-pull-right {
+  float: right;
+}
+.frydos-icon .fa.fa-pull-left,
+.frydos-icon .fas.fa-pull-left,
+.frydos-icon .far.fa-pull-left,
+.frydos-icon .fal.fa-pull-left,
+.frydos-icon .fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.frydos-icon .fa.fa-pull-right,
+.frydos-icon .fas.fa-pull-right,
+.frydos-icon .far.fa-pull-right,
+.frydos-icon .fal.fa-pull-right,
+.frydos-icon .fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+.frydos-icon .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.frydos-icon .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.frydos-icon .fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.frydos-icon .fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.frydos-icon .fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.frydos-icon .fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.frydos-icon .fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.frydos-icon .fa-flip-both, .frydos-icon .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+.frydos-icon :root .fa-rotate-90,
+.frydos-icon :root .fa-rotate-180,
+.frydos-icon :root .fa-rotate-270,
+.frydos-icon :root .fa-flip-horizontal,
+.frydos-icon :root .fa-flip-vertical,
+.frydos-icon :root .fa-flip-both {
+  -webkit-filter: none;
+  filter: none;
+}
+.frydos-icon .fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+.frydos-icon .fa-stack-1x,
+.frydos-icon .fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.frydos-icon .fa-stack-1x {
+  line-height: inherit;
+}
+.frydos-icon .fa-stack-2x {
+  font-size: 2em;
+}
+.frydos-icon .fa-inverse {
+  color: #fff;
+}
+.frydos-icon .fa-500px:before {
+  content: "";
+}
+.frydos-icon .fa-accessible-icon:before {
+  content: "";
+}
+.frydos-icon .fa-accusoft:before {
+  content: "";
+}
+.frydos-icon .fa-acquisitions-incorporated:before {
+  content: "";
+}
+.frydos-icon .fa-ad:before {
+  content: "";
+}
+.frydos-icon .fa-address-book:before {
+  content: "";
+}
+.frydos-icon .fa-address-card:before {
+  content: "";
+}
+.frydos-icon .fa-adjust:before {
+  content: "";
+}
+.frydos-icon .fa-adn:before {
+  content: "";
+}
+.frydos-icon .fa-adversal:before {
+  content: "";
+}
+.frydos-icon .fa-affiliatetheme:before {
+  content: "";
+}
+.frydos-icon .fa-air-freshener:before {
+  content: "";
+}
+.frydos-icon .fa-airbnb:before {
+  content: "";
+}
+.frydos-icon .fa-algolia:before {
+  content: "";
+}
+.frydos-icon .fa-align-center:before {
+  content: "";
+}
+.frydos-icon .fa-align-justify:before {
+  content: "";
+}
+.frydos-icon .fa-align-left:before {
+  content: "";
+}
+.frydos-icon .fa-align-right:before {
+  content: "";
+}
+.frydos-icon .fa-alipay:before {
+  content: "";
+}
+.frydos-icon .fa-allergies:before {
+  content: "";
+}
+.frydos-icon .fa-amazon:before {
+  content: "";
+}
+.frydos-icon .fa-amazon-pay:before {
+  content: "";
+}
+.frydos-icon .fa-ambulance:before {
+  content: "";
+}
+.frydos-icon .fa-american-sign-language-interpreting:before {
+  content: "";
+}
+.frydos-icon .fa-amilia:before {
+  content: "";
+}
+.frydos-icon .fa-anchor:before {
+  content: "";
+}
+.frydos-icon .fa-android:before {
+  content: "";
+}
+.frydos-icon .fa-angellist:before {
+  content: "";
+}
+.frydos-icon .fa-angle-double-down:before {
+  content: "";
+}
+.frydos-icon .fa-angle-double-left:before {
+  content: "";
+}
+.frydos-icon .fa-angle-double-right:before {
+  content: "";
+}
+.frydos-icon .fa-angle-double-up:before {
+  content: "";
+}
+.frydos-icon .fa-angle-down:before {
+  content: "";
+}
+.frydos-icon .fa-angle-left:before {
+  content: "";
+}
+.frydos-icon .fa-angle-right:before {
+  content: "";
+}
+.frydos-icon .fa-angle-up:before {
+  content: "";
+}
+.frydos-icon .fa-angry:before {
+  content: "";
+}
+.frydos-icon .fa-angrycreative:before {
+  content: "";
+}
+.frydos-icon .fa-angular:before {
+  content: "";
+}
+.frydos-icon .fa-ankh:before {
+  content: "";
+}
+.frydos-icon .fa-app-store:before {
+  content: "";
+}
+.frydos-icon .fa-app-store-ios:before {
+  content: "";
+}
+.frydos-icon .fa-apper:before {
+  content: "";
+}
+.frydos-icon .fa-apple:before {
+  content: "";
+}
+.frydos-icon .fa-apple-alt:before {
+  content: "";
+}
+.frydos-icon .fa-apple-pay:before {
+  content: "";
+}
+.frydos-icon .fa-archive:before {
+  content: "";
+}
+.frydos-icon .fa-archway:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-alt-circle-down:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-alt-circle-left:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-alt-circle-right:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-alt-circle-up:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-circle-down:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-circle-left:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-circle-right:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-circle-up:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-down:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-left:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-right:before {
+  content: "";
+}
+.frydos-icon .fa-arrow-up:before {
+  content: "";
+}
+.frydos-icon .fa-arrows-alt:before {
+  content: "";
+}
+.frydos-icon .fa-arrows-alt-h:before {
+  content: "";
+}
+.frydos-icon .fa-arrows-alt-v:before {
+  content: "";
+}
+.frydos-icon .fa-artstation:before {
+  content: "";
+}
+.frydos-icon .fa-assistive-listening-systems:before {
+  content: "";
+}
+.frydos-icon .fa-asterisk:before {
+  content: "";
+}
+.frydos-icon .fa-asymmetrik:before {
+  content: "";
+}
+.frydos-icon .fa-at:before {
+  content: "";
+}
+.frydos-icon .fa-atlas:before {
+  content: "";
+}
+.frydos-icon .fa-atlassian:before {
+  content: "";
+}
+.frydos-icon .fa-atom:before {
+  content: "";
+}
+.frydos-icon .fa-audible:before {
+  content: "";
+}
+.frydos-icon .fa-audio-description:before {
+  content: "";
+}
+.frydos-icon .fa-autoprefixer:before {
+  content: "";
+}
+.frydos-icon .fa-avianex:before {
+  content: "";
+}
+.frydos-icon .fa-aviato:before {
+  content: "";
+}
+.frydos-icon .fa-award:before {
+  content: "";
+}
+.frydos-icon .fa-aws:before {
+  content: "";
+}
+.frydos-icon .fa-baby:before {
+  content: "";
+}
+.frydos-icon .fa-baby-carriage:before {
+  content: "";
+}
+.frydos-icon .fa-backspace:before {
+  content: "";
+}
+.frydos-icon .fa-backward:before {
+  content: "";
+}
+.frydos-icon .fa-bacon:before {
+  content: "";
+}
+.frydos-icon .fa-bacteria:before {
+  content: "";
+}
+.frydos-icon .fa-bacterium:before {
+  content: "";
+}
+.frydos-icon .fa-bahai:before {
+  content: "";
+}
+.frydos-icon .fa-balance-scale:before {
+  content: "";
+}
+.frydos-icon .fa-balance-scale-left:before {
+  content: "";
+}
+.frydos-icon .fa-balance-scale-right:before {
+  content: "";
+}
+.frydos-icon .fa-ban:before {
+  content: "";
+}
+.frydos-icon .fa-band-aid:before {
+  content: "";
+}
+.frydos-icon .fa-bandcamp:before {
+  content: "";
+}
+.frydos-icon .fa-barcode:before {
+  content: "";
+}
+.frydos-icon .fa-bars:before {
+  content: "";
+}
+.frydos-icon .fa-baseball-ball:before {
+  content: "";
+}
+.frydos-icon .fa-basketball-ball:before {
+  content: "";
+}
+.frydos-icon .fa-bath:before {
+  content: "";
+}
+.frydos-icon .fa-battery-empty:before {
+  content: "";
+}
+.frydos-icon .fa-battery-full:before {
+  content: "";
+}
+.frydos-icon .fa-battery-half:before {
+  content: "";
+}
+.frydos-icon .fa-battery-quarter:before {
+  content: "";
+}
+.frydos-icon .fa-battery-three-quarters:before {
+  content: "";
+}
+.frydos-icon .fa-battle-net:before {
+  content: "";
+}
+.frydos-icon .fa-bed:before {
+  content: "";
+}
+.frydos-icon .fa-beer:before {
+  content: "";
+}
+.frydos-icon .fa-behance:before {
+  content: "";
+}
+.frydos-icon .fa-behance-square:before {
+  content: "";
+}
+.frydos-icon .fa-bell:before {
+  content: "";
+}
+.frydos-icon .fa-bell-slash:before {
+  content: "";
+}
+.frydos-icon .fa-bezier-curve:before {
+  content: "";
+}
+.frydos-icon .fa-bible:before {
+  content: "";
+}
+.frydos-icon .fa-bicycle:before {
+  content: "";
+}
+.frydos-icon .fa-biking:before {
+  content: "";
+}
+.frydos-icon .fa-bimobject:before {
+  content: "";
+}
+.frydos-icon .fa-binoculars:before {
+  content: "";
+}
+.frydos-icon .fa-biohazard:before {
+  content: "";
+}
+.frydos-icon .fa-birthday-cake:before {
+  content: "";
+}
+.frydos-icon .fa-bitbucket:before {
+  content: "";
+}
+.frydos-icon .fa-bitcoin:before {
+  content: "";
+}
+.frydos-icon .fa-bity:before {
+  content: "";
+}
+.frydos-icon .fa-black-tie:before {
+  content: "";
+}
+.frydos-icon .fa-blackberry:before {
+  content: "";
+}
+.frydos-icon .fa-blender:before {
+  content: "";
+}
+.frydos-icon .fa-blender-phone:before {
+  content: "";
+}
+.frydos-icon .fa-blind:before {
+  content: "";
+}
+.frydos-icon .fa-blog:before {
+  content: "";
+}
+.frydos-icon .fa-blogger:before {
+  content: "";
+}
+.frydos-icon .fa-blogger-b:before {
+  content: "";
+}
+.frydos-icon .fa-bluetooth:before {
+  content: "";
+}
+.frydos-icon .fa-bluetooth-b:before {
+  content: "";
+}
+.frydos-icon .fa-bold:before {
+  content: "";
+}
+.frydos-icon .fa-bolt:before {
+  content: "";
+}
+.frydos-icon .fa-bomb:before {
+  content: "";
+}
+.frydos-icon .fa-bone:before {
+  content: "";
+}
+.frydos-icon .fa-bong:before {
+  content: "";
+}
+.frydos-icon .fa-book:before {
+  content: "";
+}
+.frydos-icon .fa-book-dead:before {
+  content: "";
+}
+.frydos-icon .fa-book-medical:before {
+  content: "";
+}
+.frydos-icon .fa-book-open:before {
+  content: "";
+}
+.frydos-icon .fa-book-reader:before {
+  content: "";
+}
+.frydos-icon .fa-bookmark:before {
+  content: "";
+}
+.frydos-icon .fa-bootstrap:before {
+  content: "";
+}
+.frydos-icon .fa-border-all:before {
+  content: "";
+}
+.frydos-icon .fa-border-none:before {
+  content: "";
+}
+.frydos-icon .fa-border-style:before {
+  content: "";
+}
+.frydos-icon .fa-bowling-ball:before {
+  content: "";
+}
+.frydos-icon .fa-box:before {
+  content: "";
+}
+.frydos-icon .fa-box-open:before {
+  content: "";
+}
+.frydos-icon .fa-box-tissue:before {
+  content: "";
+}
+.frydos-icon .fa-boxes:before {
+  content: "";
+}
+.frydos-icon .fa-braille:before {
+  content: "";
+}
+.frydos-icon .fa-brain:before {
+  content: "";
+}
+.frydos-icon .fa-bread-slice:before {
+  content: "";
+}
+.frydos-icon .fa-briefcase:before {
+  content: "";
+}
+.frydos-icon .fa-briefcase-medical:before {
+  content: "";
+}
+.frydos-icon .fa-broadcast-tower:before {
+  content: "";
+}
+.frydos-icon .fa-broom:before {
+  content: "";
+}
+.frydos-icon .fa-brush:before {
+  content: "";
+}
+.frydos-icon .fa-btc:before {
+  content: "";
+}
+.frydos-icon .fa-buffer:before {
+  content: "";
+}
+.frydos-icon .fa-bug:before {
+  content: "";
+}
+.frydos-icon .fa-building:before {
+  content: "";
+}
+.frydos-icon .fa-bullhorn:before {
+  content: "";
+}
+.frydos-icon .fa-bullseye:before {
+  content: "";
+}
+.frydos-icon .fa-burn:before {
+  content: "";
+}
+.frydos-icon .fa-buromobelexperte:before {
+  content: "";
+}
+.frydos-icon .fa-bus:before {
+  content: "";
+}
+.frydos-icon .fa-bus-alt:before {
+  content: "";
+}
+.frydos-icon .fa-business-time:before {
+  content: "";
+}
+.frydos-icon .fa-buy-n-large:before {
+  content: "";
+}
+.frydos-icon .fa-buysellads:before {
+  content: "";
+}
+.frydos-icon .fa-calculator:before {
+  content: "";
+}
+.frydos-icon .fa-calendar:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-alt:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-check:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-day:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-minus:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-plus:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-times:before {
+  content: "";
+}
+.frydos-icon .fa-calendar-week:before {
+  content: "";
+}
+.frydos-icon .fa-camera:before {
+  content: "";
+}
+.frydos-icon .fa-camera-retro:before {
+  content: "";
+}
+.frydos-icon .fa-campground:before {
+  content: "";
+}
+.frydos-icon .fa-canadian-maple-leaf:before {
+  content: "";
+}
+.frydos-icon .fa-candy-cane:before {
+  content: "";
+}
+.frydos-icon .fa-cannabis:before {
+  content: "";
+}
+.frydos-icon .fa-capsules:before {
+  content: "";
+}
+.frydos-icon .fa-car:before {
+  content: "";
+}
+.frydos-icon .fa-car-alt:before {
+  content: "";
+}
+.frydos-icon .fa-car-battery:before {
+  content: "";
+}
+.frydos-icon .fa-car-crash:before {
+  content: "";
+}
+.frydos-icon .fa-car-side:before {
+  content: "";
+}
+.frydos-icon .fa-caravan:before {
+  content: "";
+}
+.frydos-icon .fa-caret-down:before {
+  content: "";
+}
+.frydos-icon .fa-caret-left:before {
+  content: "";
+}
+.frydos-icon .fa-caret-right:before {
+  content: "";
+}
+.frydos-icon .fa-caret-square-down:before {
+  content: "";
+}
+.frydos-icon .fa-caret-square-left:before {
+  content: "";
+}
+.frydos-icon .fa-caret-square-right:before {
+  content: "";
+}
+.frydos-icon .fa-caret-square-up:before {
+  content: "";
+}
+.frydos-icon .fa-caret-up:before {
+  content: "";
+}
+.frydos-icon .fa-carrot:before {
+  content: "";
+}
+.frydos-icon .fa-cart-arrow-down:before {
+  content: "";
+}
+.frydos-icon .fa-cart-plus:before {
+  content: "";
+}
+.frydos-icon .fa-cash-register:before {
+  content: "";
+}
+.frydos-icon .fa-cat:before {
+  content: "";
+}
+.frydos-icon .fa-cc-amazon-pay:before {
+  content: "";
+}
+.frydos-icon .fa-cc-amex:before {
+  content: "";
+}
+.frydos-icon .fa-cc-apple-pay:before {
+  content: "";
+}
+.frydos-icon .fa-cc-diners-club:before {
+  content: "";
+}
+.frydos-icon .fa-cc-discover:before {
+  content: "";
+}
+.frydos-icon .fa-cc-jcb:before {
+  content: "";
+}
+.frydos-icon .fa-cc-mastercard:before {
+  content: "";
+}
+.frydos-icon .fa-cc-paypal:before {
+  content: "";
+}
+.frydos-icon .fa-cc-stripe:before {
+  content: "";
+}
+.frydos-icon .fa-cc-visa:before {
+  content: "";
+}
+.frydos-icon .fa-centercode:before {
+  content: "";
+}
+.frydos-icon .fa-centos:before {
+  content: "";
+}
+.frydos-icon .fa-certificate:before {
+  content: "";
+}
+.frydos-icon .fa-chair:before {
+  content: "";
+}
+.frydos-icon .fa-chalkboard:before {
+  content: "";
+}
+.frydos-icon .fa-chalkboard-teacher:before {
+  content: "";
+}
+.frydos-icon .fa-charging-station:before {
+  content: "";
+}
+.frydos-icon .fa-chart-area:before {
+  content: "";
+}
+.frydos-icon .fa-chart-bar:before {
+  content: "";
+}
+.frydos-icon .fa-chart-line:before {
+  content: "";
+}
+.frydos-icon .fa-chart-pie:before {
+  content: "";
+}
+.frydos-icon .fa-check:before {
+  content: "";
+}
+.frydos-icon .fa-check-circle:before {
+  content: "";
+}
+.frydos-icon .fa-check-double:before {
+  content: "";
+}
+.frydos-icon .fa-check-square:before {
+  content: "";
+}
+.frydos-icon .fa-cheese:before {
+  content: "";
+}
+.frydos-icon .fa-chess:before {
+  content: "";
+}
+.frydos-icon .fa-chess-bishop:before {
+  content: "";
+}
+.frydos-icon .fa-chess-board:before {
+  content: "";
+}
+.frydos-icon .fa-chess-king:before {
+  content: "";
+}
+.frydos-icon .fa-chess-knight:before {
+  content: "";
+}
+.frydos-icon .fa-chess-pawn:before {
+  content: "";
+}
+.frydos-icon .fa-chess-queen:before {
+  content: "";
+}
+.frydos-icon .fa-chess-rook:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-circle-down:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-circle-left:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-circle-right:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-circle-up:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-down:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-left:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-right:before {
+  content: "";
+}
+.frydos-icon .fa-chevron-up:before {
+  content: "";
+}
+.frydos-icon .fa-child:before {
+  content: "";
+}
+.frydos-icon .fa-chrome:before {
+  content: "";
+}
+.frydos-icon .fa-chromecast:before {
+  content: "";
+}
+.frydos-icon .fa-church:before {
+  content: "";
+}
+.frydos-icon .fa-circle:before {
+  content: "";
+}
+.frydos-icon .fa-circle-notch:before {
+  content: "";
+}
+.frydos-icon .fa-city:before {
+  content: "";
+}
+.frydos-icon .fa-clinic-medical:before {
+  content: "";
+}
+.frydos-icon .fa-clipboard:before {
+  content: "";
+}
+.frydos-icon .fa-clipboard-check:before {
+  content: "";
+}
+.frydos-icon .fa-clipboard-list:before {
+  content: "";
+}
+.frydos-icon .fa-clock:before {
+  content: "";
+}
+.frydos-icon .fa-clone:before {
+  content: "";
+}
+.frydos-icon .fa-closed-captioning:before {
+  content: "";
+}
+.frydos-icon .fa-cloud:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-download-alt:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-meatball:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-moon:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-moon-rain:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-rain:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-showers-heavy:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-sun:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-sun-rain:before {
+  content: "";
+}
+.frydos-icon .fa-cloud-upload-alt:before {
+  content: "";
+}
+.frydos-icon .fa-cloudflare:before {
+  content: "";
+}
+.frydos-icon .fa-cloudscale:before {
+  content: "";
+}
+.frydos-icon .fa-cloudsmith:before {
+  content: "";
+}
+.frydos-icon .fa-cloudversify:before {
+  content: "";
+}
+.frydos-icon .fa-cocktail:before {
+  content: "";
+}
+.frydos-icon .fa-code:before {
+  content: "";
+}
+.frydos-icon .fa-code-branch:before {
+  content: "";
+}
+.frydos-icon .fa-codepen:before {
+  content: "";
+}
+.frydos-icon .fa-codiepie:before {
+  content: "";
+}
+.frydos-icon .fa-coffee:before {
+  content: "";
+}
+.frydos-icon .fa-cog:before {
+  content: "";
+}
+.frydos-icon .fa-cogs:before {
+  content: "";
+}
+.frydos-icon .fa-coins:before {
+  content: "";
+}
+.frydos-icon .fa-columns:before {
+  content: "";
+}
+.frydos-icon .fa-comment:before {
+  content: "";
+}
+.frydos-icon .fa-comment-alt:before {
+  content: "";
+}
+.frydos-icon .fa-comment-dollar:before {
+  content: "";
+}
+.frydos-icon .fa-comment-dots:before {
+  content: "";
+}
+.frydos-icon .fa-comment-medical:before {
+  content: "";
+}
+.frydos-icon .fa-comment-slash:before {
+  content: "";
+}
+.frydos-icon .fa-comments:before {
+  content: "";
+}
+.frydos-icon .fa-comments-dollar:before {
+  content: "";
+}
+.frydos-icon .fa-compact-disc:before {
+  content: "";
+}
+.frydos-icon .fa-compass:before {
+  content: "";
+}
+.frydos-icon .fa-compress:before {
+  content: "";
+}
+.frydos-icon .fa-compress-alt:before {
+  content: "";
+}
+.frydos-icon .fa-compress-arrows-alt:before {
+  content: "";
+}
+.frydos-icon .fa-concierge-bell:before {
+  content: "";
+}
+.frydos-icon .fa-confluence:before {
+  content: "";
+}
+.frydos-icon .fa-connectdevelop:before {
+  content: "";
+}
+.frydos-icon .fa-contao:before {
+  content: "";
+}
+.frydos-icon .fa-cookie:before {
+  content: "";
+}
+.frydos-icon .fa-cookie-bite:before {
+  content: "";
+}
+.frydos-icon .fa-copy:before {
+  content: "";
+}
+.frydos-icon .fa-copyright:before {
+  content: "";
+}
+.frydos-icon .fa-cotton-bureau:before {
+  content: "";
+}
+.frydos-icon .fa-couch:before {
+  content: "";
+}
+.frydos-icon .fa-cpanel:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-by:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-nc:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-nc-eu:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-nc-jp:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-nd:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-pd:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-pd-alt:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-remix:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-sa:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-sampling:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-sampling-plus:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-share:before {
+  content: "";
+}
+.frydos-icon .fa-creative-commons-zero:before {
+  content: "";
+}
+.frydos-icon .fa-credit-card:before {
+  content: "";
+}
+.frydos-icon .fa-critical-role:before {
+  content: "";
+}
+.frydos-icon .fa-crop:before {
+  content: "";
+}
+.frydos-icon .fa-crop-alt:before {
+  content: "";
+}
+.frydos-icon .fa-cross:before {
+  content: "";
+}
+.frydos-icon .fa-crosshairs:before {
+  content: "";
+}
+.frydos-icon .fa-crow:before {
+  content: "";
+}
+.frydos-icon .fa-crown:before {
+  content: "";
+}
+.frydos-icon .fa-crutch:before {
+  content: "";
+}
+.frydos-icon .fa-css3:before {
+  content: "";
+}
+.frydos-icon .fa-css3-alt:before {
+  content: "";
+}
+.frydos-icon .fa-cube:before {
+  content: "";
+}
+.frydos-icon .fa-cubes:before {
+  content: "";
+}
+.frydos-icon .fa-cut:before {
+  content: "";
+}
+.frydos-icon .fa-cuttlefish:before {
+  content: "";
+}
+.frydos-icon .fa-d-and-d:before {
+  content: "";
+}
+.frydos-icon .fa-d-and-d-beyond:before {
+  content: "";
+}
+.frydos-icon .fa-dailymotion:before {
+  content: "";
+}
+.frydos-icon .fa-dashcube:before {
+  content: "";
+}
+.frydos-icon .fa-database:before {
+  content: "";
+}
+.frydos-icon .fa-deaf:before {
+  content: "";
+}
+.frydos-icon .fa-deezer:before {
+  content: "";
+}
+.frydos-icon .fa-delicious:before {
+  content: "";
+}
+.frydos-icon .fa-democrat:before {
+  content: "";
+}
+.frydos-icon .fa-deploydog:before {
+  content: "";
+}
+.frydos-icon .fa-deskpro:before {
+  content: "";
+}
+.frydos-icon .fa-desktop:before {
+  content: "";
+}
+.frydos-icon .fa-dev:before {
+  content: "";
+}
+.frydos-icon .fa-deviantart:before {
+  content: "";
+}
+.frydos-icon .fa-dharmachakra:before {
+  content: "";
+}
+.frydos-icon .fa-dhl:before {
+  content: "";
+}
+.frydos-icon .fa-diagnoses:before {
+  content: "";
+}
+.frydos-icon .fa-diaspora:before {
+  content: "";
+}
+.frydos-icon .fa-dice:before {
+  content: "";
+}
+.frydos-icon .fa-dice-d20:before {
+  content: "";
+}
+.frydos-icon .fa-dice-d6:before {
+  content: "";
+}
+.frydos-icon .fa-dice-five:before {
+  content: "";
+}
+.frydos-icon .fa-dice-four:before {
+  content: "";
+}
+.frydos-icon .fa-dice-one:before {
+  content: "";
+}
+.frydos-icon .fa-dice-six:before {
+  content: "";
+}
+.frydos-icon .fa-dice-three:before {
+  content: "";
+}
+.frydos-icon .fa-dice-two:before {
+  content: "";
+}
+.frydos-icon .fa-digg:before {
+  content: "";
+}
+.frydos-icon .fa-digital-ocean:before {
+  content: "";
+}
+.frydos-icon .fa-digital-tachograph:before {
+  content: "";
+}
+.frydos-icon .fa-directions:before {
+  content: "";
+}
+.frydos-icon .fa-discord:before {
+  content: "";
+}
+.frydos-icon .fa-discourse:before {
+  content: "";
+}
+.frydos-icon .fa-disease:before {
+  content: "";
+}
+.frydos-icon .fa-divide:before {
+  content: "";
+}
+.frydos-icon .fa-dizzy:before {
+  content: "";
+}
+.frydos-icon .fa-dna:before {
+  content: "";
+}
+.frydos-icon .fa-dochub:before {
+  content: "";
+}
+.frydos-icon .fa-docker:before {
+  content: "";
+}
+.frydos-icon .fa-dog:before {
+  content: "";
+}
+.frydos-icon .fa-dollar-sign:before {
+  content: "";
+}
+.frydos-icon .fa-dolly:before {
+  content: "";
+}
+.frydos-icon .fa-dolly-flatbed:before {
+  content: "";
+}
+.frydos-icon .fa-donate:before {
+  content: "";
+}
+.frydos-icon .fa-door-closed:before {
+  content: "";
+}
+.frydos-icon .fa-door-open:before {
+  content: "";
+}
+.frydos-icon .fa-dot-circle:before {
+  content: "";
+}
+.frydos-icon .fa-dove:before {
+  content: "";
+}
+.frydos-icon .fa-download:before {
+  content: "";
+}
+.frydos-icon .fa-draft2digital:before {
+  content: "";
+}
+.frydos-icon .fa-drafting-compass:before {
+  content: "";
+}
+.frydos-icon .fa-dragon:before {
+  content: "";
+}
+.frydos-icon .fa-draw-polygon:before {
+  content: "";
+}
+.frydos-icon .fa-dribbble:before {
+  content: "";
+}
+.frydos-icon .fa-dribbble-square:before {
+  content: "";
+}
+.frydos-icon .fa-dropbox:before {
+  content: "";
+}
+.frydos-icon .fa-drum:before {
+  content: "";
+}
+.frydos-icon .fa-drum-steelpan:before {
+  content: "";
+}
+.frydos-icon .fa-drumstick-bite:before {
+  content: "";
+}
+.frydos-icon .fa-drupal:before {
+  content: "";
+}
+.frydos-icon .fa-dumbbell:before {
+  content: "";
+}
+.frydos-icon .fa-dumpster:before {
+  content: "";
+}
+.frydos-icon .fa-dumpster-fire:before {
+  content: "";
+}
+.frydos-icon .fa-dungeon:before {
+  content: "";
+}
+.frydos-icon .fa-dyalog:before {
+  content: "";
+}
+.frydos-icon .fa-earlybirds:before {
+  content: "";
+}
+.frydos-icon .fa-ebay:before {
+  content: "";
+}
+.frydos-icon .fa-edge:before {
+  content: "";
+}
+.frydos-icon .fa-edge-legacy:before {
+  content: "";
+}
+.frydos-icon .fa-edit:before {
+  content: "";
+}
+.frydos-icon .fa-egg:before {
+  content: "";
+}
+.frydos-icon .fa-eject:before {
+  content: "";
+}
+.frydos-icon .fa-elementor:before {
+  content: "";
+}
+.frydos-icon .fa-ellipsis-h:before {
+  content: "";
+}
+.frydos-icon .fa-ellipsis-v:before {
+  content: "";
+}
+.frydos-icon .fa-ello:before {
+  content: "";
+}
+.frydos-icon .fa-ember:before {
+  content: "";
+}
+.frydos-icon .fa-empire:before {
+  content: "";
+}
+.frydos-icon .fa-envelope:before {
+  content: "";
+}
+.frydos-icon .fa-envelope-open:before {
+  content: "";
+}
+.frydos-icon .fa-envelope-open-text:before {
+  content: "";
+}
+.frydos-icon .fa-envelope-square:before {
+  content: "";
+}
+.frydos-icon .fa-envira:before {
+  content: "";
+}
+.frydos-icon .fa-equals:before {
+  content: "";
+}
+.frydos-icon .fa-eraser:before {
+  content: "";
+}
+.frydos-icon .fa-erlang:before {
+  content: "";
+}
+.frydos-icon .fa-ethereum:before {
+  content: "";
+}
+.frydos-icon .fa-ethernet:before {
+  content: "";
+}
+.frydos-icon .fa-etsy:before {
+  content: "";
+}
+.frydos-icon .fa-euro-sign:before {
+  content: "";
+}
+.frydos-icon .fa-evernote:before {
+  content: "";
+}
+.frydos-icon .fa-exchange-alt:before {
+  content: "";
+}
+.frydos-icon .fa-exclamation:before {
+  content: "";
+}
+.frydos-icon .fa-exclamation-circle:before {
+  content: "";
+}
+.frydos-icon .fa-exclamation-triangle:before {
+  content: "";
+}
+.frydos-icon .fa-expand:before {
+  content: "";
+}
+.frydos-icon .fa-expand-alt:before {
+  content: "";
+}
+.frydos-icon .fa-expand-arrows-alt:before {
+  content: "";
+}
+.frydos-icon .fa-expeditedssl:before {
+  content: "";
+}
+.frydos-icon .fa-external-link-alt:before {
+  content: "";
+}
+.frydos-icon .fa-external-link-square-alt:before {
+  content: "";
+}
+.frydos-icon .fa-eye:before {
+  content: "";
+}
+.frydos-icon .fa-eye-dropper:before {
+  content: "";
+}
+.frydos-icon .fa-eye-slash:before {
+  content: "";
+}
+.frydos-icon .fa-facebook:before {
+  content: "";
+}
+.frydos-icon .fa-facebook-f:before {
+  content: "";
+}
+.frydos-icon .fa-facebook-messenger:before {
+  content: "";
+}
+.frydos-icon .fa-facebook-square:before {
+  content: "";
+}
+.frydos-icon .fa-fan:before {
+  content: "";
+}
+.frydos-icon .fa-fantasy-flight-games:before {
+  content: "";
+}
+.frydos-icon .fa-fast-backward:before {
+  content: "";
+}
+.frydos-icon .fa-fast-forward:before {
+  content: "";
+}
+.frydos-icon .fa-faucet:before {
+  content: "";
+}
+.frydos-icon .fa-fax:before {
+  content: "";
+}
+.frydos-icon .fa-feather:before {
+  content: "";
+}
+.frydos-icon .fa-feather-alt:before {
+  content: "";
+}
+.frydos-icon .fa-fedex:before {
+  content: "";
+}
+.frydos-icon .fa-fedora:before {
+  content: "";
+}
+.frydos-icon .fa-female:before {
+  content: "";
+}
+.frydos-icon .fa-fighter-jet:before {
+  content: "";
+}
+.frydos-icon .fa-figma:before {
+  content: "";
+}
+.frydos-icon .fa-file:before {
+  content: "";
+}
+.frydos-icon .fa-file-alt:before {
+  content: "";
+}
+.frydos-icon .fa-file-archive:before {
+  content: "";
+}
+.frydos-icon .fa-file-audio:before {
+  content: "";
+}
+.frydos-icon .fa-file-code:before {
+  content: "";
+}
+.frydos-icon .fa-file-contract:before {
+  content: "";
+}
+.frydos-icon .fa-file-csv:before {
+  content: "";
+}
+.frydos-icon .fa-file-download:before {
+  content: "";
+}
+.frydos-icon .fa-file-excel:before {
+  content: "";
+}
+.frydos-icon .fa-file-export:before {
+  content: "";
+}
+.frydos-icon .fa-file-image:before {
+  content: "";
+}
+.frydos-icon .fa-file-import:before {
+  content: "";
+}
+.frydos-icon .fa-file-invoice:before {
+  content: "";
+}
+.frydos-icon .fa-file-invoice-dollar:before {
+  content: "";
+}
+.frydos-icon .fa-file-medical:before {
+  content: "";
+}
+.frydos-icon .fa-file-medical-alt:before {
+  content: "";
+}
+.frydos-icon .fa-file-pdf:before {
+  content: "";
+}
+.frydos-icon .fa-file-powerpoint:before {
+  content: "";
+}
+.frydos-icon .fa-file-prescription:before {
+  content: "";
+}
+.frydos-icon .fa-file-signature:before {
+  content: "";
+}
+.frydos-icon .fa-file-upload:before {
+  content: "";
+}
+.frydos-icon .fa-file-video:before {
+  content: "";
+}
+.frydos-icon .fa-file-word:before {
+  content: "";
+}
+.frydos-icon .fa-fill:before {
+  content: "";
+}
+.frydos-icon .fa-fill-drip:before {
+  content: "";
+}
+.frydos-icon .fa-film:before {
+  content: "";
+}
+.frydos-icon .fa-filter:before {
+  content: "";
+}
+.frydos-icon .fa-fingerprint:before {
+  content: "";
+}
+.frydos-icon .fa-fire:before {
+  content: "";
+}
+.frydos-icon .fa-fire-alt:before {
+  content: "";
+}
+.frydos-icon .fa-fire-extinguisher:before {
+  content: "";
+}
+.frydos-icon .fa-firefox:before {
+  content: "";
+}
+.frydos-icon .fa-firefox-browser:before {
+  content: "";
+}
+.frydos-icon .fa-first-aid:before {
+  content: "";
+}
+.frydos-icon .fa-first-order:before {
+  content: "";
+}
+.frydos-icon .fa-first-order-alt:before {
+  content: "";
+}
+.frydos-icon .fa-firstdraft:before {
+  content: "";
+}
+.frydos-icon .fa-fish:before {
+  content: "";
+}
+.frydos-icon .fa-fist-raised:before {
+  content: "";
+}
+.frydos-icon .fa-flag:before {
+  content: "";
+}
+.frydos-icon .fa-flag-checkered:before {
+  content: "";
+}
+.frydos-icon .fa-flag-usa:before {
+  content: "";
+}
+.frydos-icon .fa-flask:before {
+  content: "";
+}
+.frydos-icon .fa-flickr:before {
+  content: "";
+}
+.frydos-icon .fa-flipboard:before {
+  content: "";
+}
+.frydos-icon .fa-flushed:before {
+  content: "";
+}
+.frydos-icon .fa-fly:before {
+  content: "";
+}
+.frydos-icon .fa-folder:before {
+  content: "";
+}
+.frydos-icon .fa-folder-minus:before {
+  content: "";
+}
+.frydos-icon .fa-folder-open:before {
+  content: "";
+}
+.frydos-icon .fa-folder-plus:before {
+  content: "";
+}
+.frydos-icon .fa-font:before {
+  content: "";
+}
+.frydos-icon .fa-font-awesome:before {
+  content: "";
+}
+.frydos-icon .fa-font-awesome-alt:before {
+  content: "";
+}
+.frydos-icon .fa-font-awesome-flag:before {
+  content: "";
+}
+.frydos-icon .fa-font-awesome-logo-full:before {
+  content: "";
+}
+.frydos-icon .fa-fonticons:before {
+  content: "";
+}
+.frydos-icon .fa-fonticons-fi:before {
+  content: "";
+}
+.frydos-icon .fa-football-ball:before {
+  content: "";
+}
+.frydos-icon .fa-fort-awesome:before {
+  content: "";
+}
+.frydos-icon .fa-fort-awesome-alt:before {
+  content: "";
+}
+.frydos-icon .fa-forumbee:before {
+  content: "";
+}
+.frydos-icon .fa-forward:before {
+  content: "";
+}
+.frydos-icon .fa-foursquare:before {
+  content: "";
+}
+.frydos-icon .fa-free-code-camp:before {
+  content: "";
+}
+.frydos-icon .fa-freebsd:before {
+  content: "";
+}
+.frydos-icon .fa-frog:before {
+  content: "";
+}
+.frydos-icon .fa-frown:before {
+  content: "";
+}
+.frydos-icon .fa-frown-open:before {
+  content: "";
+}
+.frydos-icon .fa-fulcrum:before {
+  content: "";
+}
+.frydos-icon .fa-funnel-dollar:before {
+  content: "";
+}
+.frydos-icon .fa-futbol:before {
+  content: "";
+}
+.frydos-icon .fa-galactic-republic:before {
+  content: "";
+}
+.frydos-icon .fa-galactic-senate:before {
+  content: "";
+}
+.frydos-icon .fa-gamepad:before {
+  content: "";
+}
+.frydos-icon .fa-gas-pump:before {
+  content: "";
+}
+.frydos-icon .fa-gavel:before {
+  content: "";
+}
+.frydos-icon .fa-gem:before {
+  content: "";
+}
+.frydos-icon .fa-genderless:before {
+  content: "";
+}
+.frydos-icon .fa-get-pocket:before {
+  content: "";
+}
+.frydos-icon .fa-gg:before {
+  content: "";
+}
+.frydos-icon .fa-gg-circle:before {
+  content: "";
+}
+.frydos-icon .fa-ghost:before {
+  content: "";
+}
+.frydos-icon .fa-gift:before {
+  content: "";
+}
+.frydos-icon .fa-gifts:before {
+  content: "";
+}
+.frydos-icon .fa-git:before {
+  content: "";
+}
+.frydos-icon .fa-git-alt:before {
+  content: "";
+}
+.frydos-icon .fa-git-square:before {
+  content: "";
+}
+.frydos-icon .fa-github:before {
+  content: "";
+}
+.frydos-icon .fa-github-alt:before {
+  content: "";
+}
+.frydos-icon .fa-github-square:before {
+  content: "";
+}
+.frydos-icon .fa-gitkraken:before {
+  content: "";
+}
+.frydos-icon .fa-gitlab:before {
+  content: "";
+}
+.frydos-icon .fa-gitter:before {
+  content: "";
+}
+.frydos-icon .fa-glass-cheers:before {
+  content: "";
+}
+.frydos-icon .fa-glass-martini:before {
+  content: "";
+}
+.frydos-icon .fa-glass-martini-alt:before {
+  content: "";
+}
+.frydos-icon .fa-glass-whiskey:before {
+  content: "";
+}
+.frydos-icon .fa-glasses:before {
+  content: "";
+}
+.frydos-icon .fa-glide:before {
+  content: "";
+}
+.frydos-icon .fa-glide-g:before {
+  content: "";
+}
+.frydos-icon .fa-globe:before {
+  content: "";
+}
+.frydos-icon .fa-globe-africa:before {
+  content: "";
+}
+.frydos-icon .fa-globe-americas:before {
+  content: "";
+}
+.frydos-icon .fa-globe-asia:before {
+  content: "";
+}
+.frydos-icon .fa-globe-europe:before {
+  content: "";
+}
+.frydos-icon .fa-gofore:before {
+  content: "";
+}
+.frydos-icon .fa-golf-ball:before {
+  content: "";
+}
+.frydos-icon .fa-goodreads:before {
+  content: "";
+}
+.frydos-icon .fa-goodreads-g:before {
+  content: "";
+}
+.frydos-icon .fa-google:before {
+  content: "";
+}
+.frydos-icon .fa-google-drive:before {
+  content: "";
+}
+.frydos-icon .fa-google-pay:before {
+  content: "";
+}
+.frydos-icon .fa-google-play:before {
+  content: "";
+}
+.frydos-icon .fa-google-plus:before {
+  content: "";
+}
+.frydos-icon .fa-google-plus-g:before {
+  content: "";
+}
+.frydos-icon .fa-google-plus-square:before {
+  content: "";
+}
+.frydos-icon .fa-google-wallet:before {
+  content: "";
+}
+.frydos-icon .fa-gopuram:before {
+  content: "";
+}
+.frydos-icon .fa-graduation-cap:before {
+  content: "";
+}
+.frydos-icon .fa-gratipay:before {
+  content: "";
+}
+.frydos-icon .fa-grav:before {
+  content: "";
+}
+.frydos-icon .fa-greater-than:before {
+  content: "";
+}
+.frydos-icon .fa-greater-than-equal:before {
+  content: "";
+}
+.frydos-icon .fa-grimace:before {
+  content: "";
+}
+.frydos-icon .fa-grin:before {
+  content: "";
+}
+.frydos-icon .fa-grin-alt:before {
+  content: "";
+}
+.frydos-icon .fa-grin-beam:before {
+  content: "";
+}
+.frydos-icon .fa-grin-beam-sweat:before {
+  content: "";
+}
+.frydos-icon .fa-grin-hearts:before {
+  content: "";
+}
+.frydos-icon .fa-grin-squint:before {
+  content: "";
+}
+.frydos-icon .fa-grin-squint-tears:before {
+  content: "";
+}
+.frydos-icon .fa-grin-stars:before {
+  content: "";
+}
+.frydos-icon .fa-grin-tears:before {
+  content: "";
+}
+.frydos-icon .fa-grin-tongue:before {
+  content: "";
+}
+.frydos-icon .fa-grin-tongue-squint:before {
+  content: "";
+}
+.frydos-icon .fa-grin-tongue-wink:before {
+  content: "";
+}
+.frydos-icon .fa-grin-wink:before {
+  content: "";
+}
+.frydos-icon .fa-grip-horizontal:before {
+  content: "";
+}
+.frydos-icon .fa-grip-lines:before {
+  content: "";
+}
+.frydos-icon .fa-grip-lines-vertical:before {
+  content: "";
+}
+.frydos-icon .fa-grip-vertical:before {
+  content: "";
+}
+.frydos-icon .fa-gripfire:before {
+  content: "";
+}
+.frydos-icon .fa-grunt:before {
+  content: "";
+}
+.frydos-icon .fa-guilded:before {
+  content: "";
+}
+.frydos-icon .fa-guitar:before {
+  content: "";
+}
+.frydos-icon .fa-gulp:before {
+  content: "";
+}
+.frydos-icon .fa-h-square:before {
+  content: "";
+}
+.frydos-icon .fa-hacker-news:before {
+  content: "";
+}
+.frydos-icon .fa-hacker-news-square:before {
+  content: "";
+}
+.frydos-icon .fa-hackerrank:before {
+  content: "";
+}
+.frydos-icon .fa-hamburger:before {
+  content: "";
+}
+.frydos-icon .fa-hammer:before {
+  content: "";
+}
+.frydos-icon .fa-hamsa:before {
+  content: "";
+}
+.frydos-icon .fa-hand-holding:before {
+  content: "";
+}
+.frydos-icon .fa-hand-holding-heart:before {
+  content: "";
+}
+.frydos-icon .fa-hand-holding-medical:before {
+  content: "";
+}
+.frydos-icon .fa-hand-holding-usd:before {
+  content: "";
+}
+.frydos-icon .fa-hand-holding-water:before {
+  content: "";
+}
+.frydos-icon .fa-hand-lizard:before {
+  content: "";
+}
+.frydos-icon .fa-hand-middle-finger:before {
+  content: "";
+}
+.frydos-icon .fa-hand-paper:before {
+  content: "";
+}
+.frydos-icon .fa-hand-peace:before {
+  content: "";
+}
+.frydos-icon .fa-hand-point-down:before {
+  content: "";
+}
+.frydos-icon .fa-hand-point-left:before {
+  content: "";
+}
+.frydos-icon .fa-hand-point-right:before {
+  content: "";
+}
+.frydos-icon .fa-hand-point-up:before {
+  content: "";
+}
+.frydos-icon .fa-hand-pointer:before {
+  content: "";
+}
+.frydos-icon .fa-hand-rock:before {
+  content: "";
+}
+.frydos-icon .fa-hand-scissors:before {
+  content: "";
+}
+.frydos-icon .fa-hand-sparkles:before {
+  content: "";
+}
+.frydos-icon .fa-hand-spock:before {
+  content: "";
+}
+.frydos-icon .fa-hands:before {
+  content: "";
+}
+.frydos-icon .fa-hands-helping:before {
+  content: "";
+}
+.frydos-icon .fa-hands-wash:before {
+  content: "";
+}
+.frydos-icon .fa-handshake:before {
+  content: "";
+}
+.frydos-icon .fa-handshake-alt-slash:before {
+  content: "";
+}
+.frydos-icon .fa-handshake-slash:before {
+  content: "";
+}
+.frydos-icon .fa-hanukiah:before {
+  content: "";
+}
+.frydos-icon .fa-hard-hat:before {
+  content: "";
+}
+.frydos-icon .fa-hashtag:before {
+  content: "";
+}
+.frydos-icon .fa-hat-cowboy:before {
+  content: "";
+}
+.frydos-icon .fa-hat-cowboy-side:before {
+  content: "";
+}
+.frydos-icon .fa-hat-wizard:before {
+  content: "";
+}
+.frydos-icon .fa-hdd:before {
+  content: "";
+}
+.frydos-icon .fa-head-side-cough:before {
+  content: "";
+}
+.frydos-icon .fa-head-side-cough-slash:before {
+  content: "";
+}
+.frydos-icon .fa-head-side-mask:before {
+  content: "";
+}
+.frydos-icon .fa-head-side-virus:before {
+  content: "";
+}
+.frydos-icon .fa-heading:before {
+  content: "";
+}
+.frydos-icon .fa-headphones:before {
+  content: "";
+}
+.frydos-icon .fa-headphones-alt:before {
+  content: "";
+}
+.frydos-icon .fa-headset:before {
+  content: "";
+}
+.frydos-icon .fa-heart:before {
+  content: "";
+}
+.frydos-icon .fa-heart-broken:before {
+  content: "";
+}
+.frydos-icon .fa-heartbeat:before {
+  content: "";
+}
+.frydos-icon .fa-helicopter:before {
+  content: "";
+}
+.frydos-icon .fa-highlighter:before {
+  content: "";
+}
+.frydos-icon .fa-hiking:before {
+  content: "";
+}
+.frydos-icon .fa-hippo:before {
+  content: "";
+}
+.frydos-icon .fa-hips:before {
+  content: "";
+}
+.frydos-icon .fa-hire-a-helper:before {
+  content: "";
+}
+.frydos-icon .fa-history:before {
+  content: "";
+}
+.frydos-icon .fa-hive:before {
+  content: "";
+}
+.frydos-icon .fa-hockey-puck:before {
+  content: "";
+}
+.frydos-icon .fa-holly-berry:before {
+  content: "";
+}
+.frydos-icon .fa-home:before {
+  content: "";
+}
+.frydos-icon .fa-hooli:before {
+  content: "";
+}
+.frydos-icon .fa-hornbill:before {
+  content: "";
+}
+.frydos-icon .fa-horse:before {
+  content: "";
+}
+.frydos-icon .fa-horse-head:before {
+  content: "";
+}
+.frydos-icon .fa-hospital:before {
+  content: "";
+}
+.frydos-icon .fa-hospital-alt:before {
+  content: "";
+}
+.frydos-icon .fa-hospital-symbol:before {
+  content: "";
+}
+.frydos-icon .fa-hospital-user:before {
+  content: "";
+}
+.frydos-icon .fa-hot-tub:before {
+  content: "";
+}
+.frydos-icon .fa-hotdog:before {
+  content: "";
+}
+.frydos-icon .fa-hotel:before {
+  content: "";
+}
+.frydos-icon .fa-hotjar:before {
+  content: "";
+}
+.frydos-icon .fa-hourglass:before {
+  content: "";
+}
+.frydos-icon .fa-hourglass-end:before {
+  content: "";
+}
+.frydos-icon .fa-hourglass-half:before {
+  content: "";
+}
+.frydos-icon .fa-hourglass-start:before {
+  content: "";
+}
+.frydos-icon .fa-house-damage:before {
+  content: "";
+}
+.frydos-icon .fa-house-user:before {
+  content: "";
+}
+.frydos-icon .fa-houzz:before {
+  content: "";
+}
+.frydos-icon .fa-hryvnia:before {
+  content: "";
+}
+.frydos-icon .fa-html5:before {
+  content: "";
+}
+.frydos-icon .fa-hubspot:before {
+  content: "";
+}
+.frydos-icon .fa-i-cursor:before {
+  content: "";
+}
+.frydos-icon .fa-ice-cream:before {
+  content: "";
+}
+.frydos-icon .fa-icicles:before {
+  content: "";
+}
+.frydos-icon .fa-icons:before {
+  content: "";
+}
+.frydos-icon .fa-id-badge:before {
+  content: "";
+}
+.frydos-icon .fa-id-card:before {
+  content: "";
+}
+.frydos-icon .fa-id-card-alt:before {
+  content: "";
+}
+.frydos-icon .fa-ideal:before {
+  content: "";
+}
+.frydos-icon .fa-igloo:before {
+  content: "";
+}
+.frydos-icon .fa-image:before {
+  content: "";
+}
+.frydos-icon .fa-images:before {
+  content: "";
+}
+.frydos-icon .fa-imdb:before {
+  content: "";
+}
+.frydos-icon .fa-inbox:before {
+  content: "";
+}
+.frydos-icon .fa-indent:before {
+  content: "";
+}
+.frydos-icon .fa-industry:before {
+  content: "";
+}
+.frydos-icon .fa-infinity:before {
+  content: "";
+}
+.frydos-icon .fa-info:before {
+  content: "";
+}
+.frydos-icon .fa-info-circle:before {
+  content: "";
+}
+.frydos-icon .fa-innosoft:before {
+  content: "";
+}
+.frydos-icon .fa-instagram:before {
+  content: "";
+}
+.frydos-icon .fa-instagram-square:before {
+  content: "";
+}
+.frydos-icon .fa-instalod:before {
+  content: "";
+}
+.frydos-icon .fa-intercom:before {
+  content: "";
+}
+.frydos-icon .fa-internet-explorer:before {
+  content: "";
+}
+.frydos-icon .fa-invision:before {
+  content: "";
+}
+.frydos-icon .fa-ioxhost:before {
+  content: "";
+}
+.frydos-icon .fa-italic:before {
+  content: "";
+}
+.frydos-icon .fa-itch-io:before {
+  content: "";
+}
+.frydos-icon .fa-itunes:before {
+  content: "";
+}
+.frydos-icon .fa-itunes-note:before {
+  content: "";
+}
+.frydos-icon .fa-java:before {
+  content: "";
+}
+.frydos-icon .fa-jedi:before {
+  content: "";
+}
+.frydos-icon .fa-jedi-order:before {
+  content: "";
+}
+.frydos-icon .fa-jenkins:before {
+  content: "";
+}
+.frydos-icon .fa-jira:before {
+  content: "";
+}
+.frydos-icon .fa-joget:before {
+  content: "";
+}
+.frydos-icon .fa-joint:before {
+  content: "";
+}
+.frydos-icon .fa-joomla:before {
+  content: "";
+}
+.frydos-icon .fa-journal-whills:before {
+  content: "";
+}
+.frydos-icon .fa-js:before {
+  content: "";
+}
+.frydos-icon .fa-js-square:before {
+  content: "";
+}
+.frydos-icon .fa-jsfiddle:before {
+  content: "";
+}
+.frydos-icon .fa-kaaba:before {
+  content: "";
+}
+.frydos-icon .fa-kaggle:before {
+  content: "";
+}
+.frydos-icon .fa-key:before {
+  content: "";
+}
+.frydos-icon .fa-keybase:before {
+  content: "";
+}
+.frydos-icon .fa-keyboard:before {
+  content: "";
+}
+.frydos-icon .fa-keycdn:before {
+  content: "";
+}
+.frydos-icon .fa-khanda:before {
+  content: "";
+}
+.frydos-icon .fa-kickstarter:before {
+  content: "";
+}
+.frydos-icon .fa-kickstarter-k:before {
+  content: "";
+}
+.frydos-icon .fa-kiss:before {
+  content: "";
+}
+.frydos-icon .fa-kiss-beam:before {
+  content: "";
+}
+.frydos-icon .fa-kiss-wink-heart:before {
+  content: "";
+}
+.frydos-icon .fa-kiwi-bird:before {
+  content: "";
+}
+.frydos-icon .fa-korvue:before {
+  content: "";
+}
+.frydos-icon .fa-landmark:before {
+  content: "";
+}
+.frydos-icon .fa-language:before {
+  content: "";
+}
+.frydos-icon .fa-laptop:before {
+  content: "";
+}
+.frydos-icon .fa-laptop-code:before {
+  content: "";
+}
+.frydos-icon .fa-laptop-house:before {
+  content: "";
+}
+.frydos-icon .fa-laptop-medical:before {
+  content: "";
+}
+.frydos-icon .fa-laravel:before {
+  content: "";
+}
+.frydos-icon .fa-lastfm:before {
+  content: "";
+}
+.frydos-icon .fa-lastfm-square:before {
+  content: "";
+}
+.frydos-icon .fa-laugh:before {
+  content: "";
+}
+.frydos-icon .fa-laugh-beam:before {
+  content: "";
+}
+.frydos-icon .fa-laugh-squint:before {
+  content: "";
+}
+.frydos-icon .fa-laugh-wink:before {
+  content: "";
+}
+.frydos-icon .fa-layer-group:before {
+  content: "";
+}
+.frydos-icon .fa-leaf:before {
+  content: "";
+}
+.frydos-icon .fa-leanpub:before {
+  content: "";
+}
+.frydos-icon .fa-lemon:before {
+  content: "";
+}
+.frydos-icon .fa-less:before {
+  content: "";
+}
+.frydos-icon .fa-less-than:before {
+  content: "";
+}
+.frydos-icon .fa-less-than-equal:before {
+  content: "";
+}
+.frydos-icon .fa-level-down-alt:before {
+  content: "";
+}
+.frydos-icon .fa-level-up-alt:before {
+  content: "";
+}
+.frydos-icon .fa-life-ring:before {
+  content: "";
+}
+.frydos-icon .fa-lightbulb:before {
+  content: "";
+}
+.frydos-icon .fa-line:before {
+  content: "";
+}
+.frydos-icon .fa-link:before {
+  content: "";
+}
+.frydos-icon .fa-linkedin:before {
+  content: "";
+}
+.frydos-icon .fa-linkedin-in:before {
+  content: "";
+}
+.frydos-icon .fa-linode:before {
+  content: "";
+}
+.frydos-icon .fa-linux:before {
+  content: "";
+}
+.frydos-icon .fa-lira-sign:before {
+  content: "";
+}
+.frydos-icon .fa-list:before {
+  content: "";
+}
+.frydos-icon .fa-list-alt:before {
+  content: "";
+}
+.frydos-icon .fa-list-ol:before {
+  content: "";
+}
+.frydos-icon .fa-list-ul:before {
+  content: "";
+}
+.frydos-icon .fa-location-arrow:before {
+  content: "";
+}
+.frydos-icon .fa-lock:before {
+  content: "";
+}
+.frydos-icon .fa-lock-open:before {
+  content: "";
+}
+.frydos-icon .fa-long-arrow-alt-down:before {
+  content: "";
+}
+.frydos-icon .fa-long-arrow-alt-left:before {
+  content: "";
+}
+.frydos-icon .fa-long-arrow-alt-right:before {
+  content: "";
+}
+.frydos-icon .fa-long-arrow-alt-up:before {
+  content: "";
+}
+.frydos-icon .fa-low-vision:before {
+  content: "";
+}
+.frydos-icon .fa-luggage-cart:before {
+  content: "";
+}
+.frydos-icon .fa-lungs:before {
+  content: "";
+}
+.frydos-icon .fa-lungs-virus:before {
+  content: "";
+}
+.frydos-icon .fa-lyft:before {
+  content: "";
+}
+.frydos-icon .fa-magento:before {
+  content: "";
+}
+.frydos-icon .fa-magic:before {
+  content: "";
+}
+.frydos-icon .fa-magnet:before {
+  content: "";
+}
+.frydos-icon .fa-mail-bulk:before {
+  content: "";
+}
+.frydos-icon .fa-mailchimp:before {
+  content: "";
+}
+.frydos-icon .fa-male:before {
+  content: "";
+}
+.frydos-icon .fa-mandalorian:before {
+  content: "";
+}
+.frydos-icon .fa-map:before {
+  content: "";
+}
+.frydos-icon .fa-map-marked:before {
+  content: "";
+}
+.frydos-icon .fa-map-marked-alt:before {
+  content: "";
+}
+.frydos-icon .fa-map-marker:before {
+  content: "";
+}
+.frydos-icon .fa-map-marker-alt:before {
+  content: "";
+}
+.frydos-icon .fa-map-pin:before {
+  content: "";
+}
+.frydos-icon .fa-map-signs:before {
+  content: "";
+}
+.frydos-icon .fa-markdown:before {
+  content: "";
+}
+.frydos-icon .fa-marker:before {
+  content: "";
+}
+.frydos-icon .fa-mars:before {
+  content: "";
+}
+.frydos-icon .fa-mars-double:before {
+  content: "";
+}
+.frydos-icon .fa-mars-stroke:before {
+  content: "";
+}
+.frydos-icon .fa-mars-stroke-h:before {
+  content: "";
+}
+.frydos-icon .fa-mars-stroke-v:before {
+  content: "";
+}
+.frydos-icon .fa-mask:before {
+  content: "";
+}
+.frydos-icon .fa-mastodon:before {
+  content: "";
+}
+.frydos-icon .fa-maxcdn:before {
+  content: "";
+}
+.frydos-icon .fa-mdb:before {
+  content: "";
+}
+.frydos-icon .fa-medal:before {
+  content: "";
+}
+.frydos-icon .fa-medapps:before {
+  content: "";
+}
+.frydos-icon .fa-medium:before {
+  content: "";
+}
+.frydos-icon .fa-medium-m:before {
+  content: "";
+}
+.frydos-icon .fa-medkit:before {
+  content: "";
+}
+.frydos-icon .fa-medrt:before {
+  content: "";
+}
+.frydos-icon .fa-meetup:before {
+  content: "";
+}
+.frydos-icon .fa-megaport:before {
+  content: "";
+}
+.frydos-icon .fa-meh:before {
+  content: "";
+}
+.frydos-icon .fa-meh-blank:before {
+  content: "";
+}
+.frydos-icon .fa-meh-rolling-eyes:before {
+  content: "";
+}
+.frydos-icon .fa-memory:before {
+  content: "";
+}
+.frydos-icon .fa-mendeley:before {
+  content: "";
+}
+.frydos-icon .fa-menorah:before {
+  content: "";
+}
+.frydos-icon .fa-mercury:before {
+  content: "";
+}
+.frydos-icon .fa-meteor:before {
+  content: "";
+}
+.frydos-icon .fa-microblog:before {
+  content: "";
+}
+.frydos-icon .fa-microchip:before {
+  content: "";
+}
+.frydos-icon .fa-microphone:before {
+  content: "";
+}
+.frydos-icon .fa-microphone-alt:before {
+  content: "";
+}
+.frydos-icon .fa-microphone-alt-slash:before {
+  content: "";
+}
+.frydos-icon .fa-microphone-slash:before {
+  content: "";
+}
+.frydos-icon .fa-microscope:before {
+  content: "";
+}
+.frydos-icon .fa-microsoft:before {
+  content: "";
+}
+.frydos-icon .fa-minus:before {
+  content: "";
+}
+.frydos-icon .fa-minus-circle:before {
+  content: "";
+}
+.frydos-icon .fa-minus-square:before {
+  content: "";
+}
+.frydos-icon .fa-mitten:before {
+  content: "";
+}
+.frydos-icon .fa-mix:before {
+  content: "";
+}
+.frydos-icon .fa-mixcloud:before {
+  content: "";
+}
+.frydos-icon .fa-mixer:before {
+  content: "";
+}
+.frydos-icon .fa-mizuni:before {
+  content: "";
+}
+.frydos-icon .fa-mobile:before {
+  content: "";
+}
+.frydos-icon .fa-mobile-alt:before {
+  content: "";
+}
+.frydos-icon .fa-modx:before {
+  content: "";
+}
+.frydos-icon .fa-monero:before {
+  content: "";
+}
+.frydos-icon .fa-money-bill:before {
+  content: "";
+}
+.frydos-icon .fa-money-bill-alt:before {
+  content: "";
+}
+.frydos-icon .fa-money-bill-wave:before {
+  content: "";
+}
+.frydos-icon .fa-money-bill-wave-alt:before {
+  content: "";
+}
+.frydos-icon .fa-money-check:before {
+  content: "";
+}
+.frydos-icon .fa-money-check-alt:before {
+  content: "";
+}
+.frydos-icon .fa-monument:before {
+  content: "";
+}
+.frydos-icon .fa-moon:before {
+  content: "";
+}
+.frydos-icon .fa-mortar-pestle:before {
+  content: "";
+}
+.frydos-icon .fa-mosque:before {
+  content: "";
+}
+.frydos-icon .fa-motorcycle:before {
+  content: "";
+}
+.frydos-icon .fa-mountain:before {
+  content: "";
+}
+.frydos-icon .fa-mouse:before {
+  content: "";
+}
+.frydos-icon .fa-mouse-pointer:before {
+  content: "";
+}
+.frydos-icon .fa-mug-hot:before {
+  content: "";
+}
+.frydos-icon .fa-music:before {
+  content: "";
+}
+.frydos-icon .fa-napster:before {
+  content: "";
+}
+.frydos-icon .fa-neos:before {
+  content: "";
+}
+.frydos-icon .fa-network-wired:before {
+  content: "";
+}
+.frydos-icon .fa-neuter:before {
+  content: "";
+}
+.frydos-icon .fa-newspaper:before {
+  content: "";
+}
+.frydos-icon .fa-nimblr:before {
+  content: "";
+}
+.frydos-icon .fa-node:before {
+  content: "";
+}
+.frydos-icon .fa-node-js:before {
+  content: "";
+}
+.frydos-icon .fa-not-equal:before {
+  content: "";
+}
+.frydos-icon .fa-notes-medical:before {
+  content: "";
+}
+.frydos-icon .fa-npm:before {
+  content: "";
+}
+.frydos-icon .fa-ns8:before {
+  content: "";
+}
+.frydos-icon .fa-nutritionix:before {
+  content: "";
+}
+.frydos-icon .fa-object-group:before {
+  content: "";
+}
+.frydos-icon .fa-object-ungroup:before {
+  content: "";
+}
+.frydos-icon .fa-octopus-deploy:before {
+  content: "";
+}
+.frydos-icon .fa-odnoklassniki:before {
+  content: "";
+}
+.frydos-icon .fa-odnoklassniki-square:before {
+  content: "";
+}
+.frydos-icon .fa-oil-can:before {
+  content: "";
+}
+.frydos-icon .fa-old-republic:before {
+  content: "";
+}
+.frydos-icon .fa-om:before {
+  content: "";
+}
+.frydos-icon .fa-opencart:before {
+  content: "";
+}
+.frydos-icon .fa-openid:before {
+  content: "";
+}
+.frydos-icon .fa-opera:before {
+  content: "";
+}
+.frydos-icon .fa-optin-monster:before {
+  content: "";
+}
+.frydos-icon .fa-orcid:before {
+  content: "";
+}
+.frydos-icon .fa-osi:before {
+  content: "";
+}
+.frydos-icon .fa-otter:before {
+  content: "";
+}
+.frydos-icon .fa-outdent:before {
+  content: "";
+}
+.frydos-icon .fa-page4:before {
+  content: "";
+}
+.frydos-icon .fa-pagelines:before {
+  content: "";
+}
+.frydos-icon .fa-pager:before {
+  content: "";
+}
+.frydos-icon .fa-paint-brush:before {
+  content: "";
+}
+.frydos-icon .fa-paint-roller:before {
+  content: "";
+}
+.frydos-icon .fa-palette:before {
+  content: "";
+}
+.frydos-icon .fa-palfed:before {
+  content: "";
+}
+.frydos-icon .fa-pallet:before {
+  content: "";
+}
+.frydos-icon .fa-paper-plane:before {
+  content: "";
+}
+.frydos-icon .fa-paperclip:before {
+  content: "";
+}
+.frydos-icon .fa-parachute-box:before {
+  content: "";
+}
+.frydos-icon .fa-paragraph:before {
+  content: "";
+}
+.frydos-icon .fa-parking:before {
+  content: "";
+}
+.frydos-icon .fa-passport:before {
+  content: "";
+}
+.frydos-icon .fa-pastafarianism:before {
+  content: "";
+}
+.frydos-icon .fa-paste:before {
+  content: "";
+}
+.frydos-icon .fa-patreon:before {
+  content: "";
+}
+.frydos-icon .fa-pause:before {
+  content: "";
+}
+.frydos-icon .fa-pause-circle:before {
+  content: "";
+}
+.frydos-icon .fa-paw:before {
+  content: "";
+}
+.frydos-icon .fa-paypal:before {
+  content: "";
+}
+.frydos-icon .fa-peace:before {
+  content: "";
+}
+.frydos-icon .fa-pen:before {
+  content: "";
+}
+.frydos-icon .fa-pen-alt:before {
+  content: "";
+}
+.frydos-icon .fa-pen-fancy:before {
+  content: "";
+}
+.frydos-icon .fa-pen-nib:before {
+  content: "";
+}
+.frydos-icon .fa-pen-square:before {
+  content: "";
+}
+.frydos-icon .fa-pencil-alt:before {
+  content: "";
+}
+.frydos-icon .fa-pencil-ruler:before {
+  content: "";
+}
+.frydos-icon .fa-penny-arcade:before {
+  content: "";
+}
+.frydos-icon .fa-people-arrows:before {
+  content: "";
+}
+.frydos-icon .fa-people-carry:before {
+  content: "";
+}
+.frydos-icon .fa-pepper-hot:before {
+  content: "";
+}
+.frydos-icon .fa-perbyte:before {
+  content: "";
+}
+.frydos-icon .fa-percent:before {
+  content: "";
+}
+.frydos-icon .fa-percentage:before {
+  content: "";
+}
+.frydos-icon .fa-periscope:before {
+  content: "";
+}
+.frydos-icon .fa-person-booth:before {
+  content: "";
+}
+.frydos-icon .fa-phabricator:before {
+  content: "";
+}
+.frydos-icon .fa-phoenix-framework:before {
+  content: "";
+}
+.frydos-icon .fa-phoenix-squadron:before {
+  content: "";
+}
+.frydos-icon .fa-phone:before {
+  content: "";
+}
+.frydos-icon .fa-phone-alt:before {
+  content: "";
+}
+.frydos-icon .fa-phone-slash:before {
+  content: "";
+}
+.frydos-icon .fa-phone-square:before {
+  content: "";
+}
+.frydos-icon .fa-phone-square-alt:before {
+  content: "";
+}
+.frydos-icon .fa-phone-volume:before {
+  content: "";
+}
+.frydos-icon .fa-photo-video:before {
+  content: "";
+}
+.frydos-icon .fa-php:before {
+  content: "";
+}
+.frydos-icon .fa-pied-piper:before {
+  content: "";
+}
+.frydos-icon .fa-pied-piper-alt:before {
+  content: "";
+}
+.frydos-icon .fa-pied-piper-hat:before {
+  content: "";
+}
+.frydos-icon .fa-pied-piper-pp:before {
+  content: "";
+}
+.frydos-icon .fa-pied-piper-square:before {
+  content: "";
+}
+.frydos-icon .fa-piggy-bank:before {
+  content: "";
+}
+.frydos-icon .fa-pills:before {
+  content: "";
+}
+.frydos-icon .fa-pinterest:before {
+  content: "";
+}
+.frydos-icon .fa-pinterest-p:before {
+  content: "";
+}
+.frydos-icon .fa-pinterest-square:before {
+  content: "";
+}
+.frydos-icon .fa-pizza-slice:before {
+  content: "";
+}
+.frydos-icon .fa-place-of-worship:before {
+  content: "";
+}
+.frydos-icon .fa-plane:before {
+  content: "";
+}
+.frydos-icon .fa-plane-arrival:before {
+  content: "";
+}
+.frydos-icon .fa-plane-departure:before {
+  content: "";
+}
+.frydos-icon .fa-plane-slash:before {
+  content: "";
+}
+.frydos-icon .fa-play:before {
+  content: "";
+}
+.frydos-icon .fa-play-circle:before {
+  content: "";
+}
+.frydos-icon .fa-playstation:before {
+  content: "";
+}
+.frydos-icon .fa-plug:before {
+  content: "";
+}
+.frydos-icon .fa-plus:before {
+  content: "";
+}
+.frydos-icon .fa-plus-circle:before {
+  content: "";
+}
+.frydos-icon .fa-plus-square:before {
+  content: "";
+}
+.frydos-icon .fa-podcast:before {
+  content: "";
+}
+.frydos-icon .fa-poll:before {
+  content: "";
+}
+.frydos-icon .fa-poll-h:before {
+  content: "";
+}
+.frydos-icon .fa-poo:before {
+  content: "";
+}
+.frydos-icon .fa-poo-storm:before {
+  content: "";
+}
+.frydos-icon .fa-poop:before {
+  content: "";
+}
+.frydos-icon .fa-portrait:before {
+  content: "";
+}
+.frydos-icon .fa-pound-sign:before {
+  content: "";
+}
+.frydos-icon .fa-power-off:before {
+  content: "";
+}
+.frydos-icon .fa-pray:before {
+  content: "";
+}
+.frydos-icon .fa-praying-hands:before {
+  content: "";
+}
+.frydos-icon .fa-prescription:before {
+  content: "";
+}
+.frydos-icon .fa-prescription-bottle:before {
+  content: "";
+}
+.frydos-icon .fa-prescription-bottle-alt:before {
+  content: "";
+}
+.frydos-icon .fa-print:before {
+  content: "";
+}
+.frydos-icon .fa-procedures:before {
+  content: "";
+}
+.frydos-icon .fa-product-hunt:before {
+  content: "";
+}
+.frydos-icon .fa-project-diagram:before {
+  content: "";
+}
+.frydos-icon .fa-pump-medical:before {
+  content: "";
+}
+.frydos-icon .fa-pump-soap:before {
+  content: "";
+}
+.frydos-icon .fa-pushed:before {
+  content: "";
+}
+.frydos-icon .fa-puzzle-piece:before {
+  content: "";
+}
+.frydos-icon .fa-python:before {
+  content: "";
+}
+.frydos-icon .fa-qq:before {
+  content: "";
+}
+.frydos-icon .fa-qrcode:before {
+  content: "";
+}
+.frydos-icon .fa-question:before {
+  content: "";
+}
+.frydos-icon .fa-question-circle:before {
+  content: "";
+}
+.frydos-icon .fa-quidditch:before {
+  content: "";
+}
+.frydos-icon .fa-quinscape:before {
+  content: "";
+}
+.frydos-icon .fa-quora:before {
+  content: "";
+}
+.frydos-icon .fa-quote-left:before {
+  content: "";
+}
+.frydos-icon .fa-quote-right:before {
+  content: "";
+}
+.frydos-icon .fa-quran:before {
+  content: "";
+}
+.frydos-icon .fa-r-project:before {
+  content: "";
+}
+.frydos-icon .fa-radiation:before {
+  content: "";
+}
+.frydos-icon .fa-radiation-alt:before {
+  content: "";
+}
+.frydos-icon .fa-rainbow:before {
+  content: "";
+}
+.frydos-icon .fa-random:before {
+  content: "";
+}
+.frydos-icon .fa-raspberry-pi:before {
+  content: "";
+}
+.frydos-icon .fa-ravelry:before {
+  content: "";
+}
+.frydos-icon .fa-react:before {
+  content: "";
+}
+.frydos-icon .fa-reacteurope:before {
+  content: "";
+}
+.frydos-icon .fa-readme:before {
+  content: "";
+}
+.frydos-icon .fa-rebel:before {
+  content: "";
+}
+.frydos-icon .fa-receipt:before {
+  content: "";
+}
+.frydos-icon .fa-record-vinyl:before {
+  content: "";
+}
+.frydos-icon .fa-recycle:before {
+  content: "";
+}
+.frydos-icon .fa-red-river:before {
+  content: "";
+}
+.frydos-icon .fa-reddit:before {
+  content: "";
+}
+.frydos-icon .fa-reddit-alien:before {
+  content: "";
+}
+.frydos-icon .fa-reddit-square:before {
+  content: "";
+}
+.frydos-icon .fa-redhat:before {
+  content: "";
+}
+.frydos-icon .fa-redo:before {
+  content: "";
+}
+.frydos-icon .fa-redo-alt:before {
+  content: "";
+}
+.frydos-icon .fa-registered:before {
+  content: "";
+}
+.frydos-icon .fa-remove-format:before {
+  content: "";
+}
+.frydos-icon .fa-renren:before {
+  content: "";
+}
+.frydos-icon .fa-reply:before {
+  content: "";
+}
+.frydos-icon .fa-reply-all:before {
+  content: "";
+}
+.frydos-icon .fa-replyd:before {
+  content: "";
+}
+.frydos-icon .fa-republican:before {
+  content: "";
+}
+.frydos-icon .fa-researchgate:before {
+  content: "";
+}
+.frydos-icon .fa-resolving:before {
+  content: "";
+}
+.frydos-icon .fa-restroom:before {
+  content: "";
+}
+.frydos-icon .fa-retweet:before {
+  content: "";
+}
+.frydos-icon .fa-rev:before {
+  content: "";
+}
+.frydos-icon .fa-ribbon:before {
+  content: "";
+}
+.frydos-icon .fa-ring:before {
+  content: "";
+}
+.frydos-icon .fa-road:before {
+  content: "";
+}
+.frydos-icon .fa-robot:before {
+  content: "";
+}
+.frydos-icon .fa-rocket:before {
+  content: "";
+}
+.frydos-icon .fa-rocketchat:before {
+  content: "";
+}
+.frydos-icon .fa-rockrms:before {
+  content: "";
+}
+.frydos-icon .fa-route:before {
+  content: "";
+}
+.frydos-icon .fa-rss:before {
+  content: "";
+}
+.frydos-icon .fa-rss-square:before {
+  content: "";
+}
+.frydos-icon .fa-ruble-sign:before {
+  content: "";
+}
+.frydos-icon .fa-ruler:before {
+  content: "";
+}
+.frydos-icon .fa-ruler-combined:before {
+  content: "";
+}
+.frydos-icon .fa-ruler-horizontal:before {
+  content: "";
+}
+.frydos-icon .fa-ruler-vertical:before {
+  content: "";
+}
+.frydos-icon .fa-running:before {
+  content: "";
+}
+.frydos-icon .fa-rupee-sign:before {
+  content: "";
+}
+.frydos-icon .fa-rust:before {
+  content: "";
+}
+.frydos-icon .fa-sad-cry:before {
+  content: "";
+}
+.frydos-icon .fa-sad-tear:before {
+  content: "";
+}
+.frydos-icon .fa-safari:before {
+  content: "";
+}
+.frydos-icon .fa-salesforce:before {
+  content: "";
+}
+.frydos-icon .fa-sass:before {
+  content: "";
+}
+.frydos-icon .fa-satellite:before {
+  content: "";
+}
+.frydos-icon .fa-satellite-dish:before {
+  content: "";
+}
+.frydos-icon .fa-save:before {
+  content: "";
+}
+.frydos-icon .fa-schlix:before {
+  content: "";
+}
+.frydos-icon .fa-school:before {
+  content: "";
+}
+.frydos-icon .fa-screwdriver:before {
+  content: "";
+}
+.frydos-icon .fa-scribd:before {
+  content: "";
+}
+.frydos-icon .fa-scroll:before {
+  content: "";
+}
+.frydos-icon .fa-sd-card:before {
+  content: "";
+}
+.frydos-icon .fa-search:before {
+  content: "";
+}
+.frydos-icon .fa-search-dollar:before {
+  content: "";
+}
+.frydos-icon .fa-search-location:before {
+  content: "";
+}
+.frydos-icon .fa-search-minus:before {
+  content: "";
+}
+.frydos-icon .fa-search-plus:before {
+  content: "";
+}
+.frydos-icon .fa-searchengin:before {
+  content: "";
+}
+.frydos-icon .fa-seedling:before {
+  content: "";
+}
+.frydos-icon .fa-sellcast:before {
+  content: "";
+}
+.frydos-icon .fa-sellsy:before {
+  content: "";
+}
+.frydos-icon .fa-server:before {
+  content: "";
+}
+.frydos-icon .fa-servicestack:before {
+  content: "";
+}
+.frydos-icon .fa-shapes:before {
+  content: "";
+}
+.frydos-icon .fa-share:before {
+  content: "";
+}
+.frydos-icon .fa-share-alt:before {
+  content: "";
+}
+.frydos-icon .fa-share-alt-square:before {
+  content: "";
+}
+.frydos-icon .fa-share-square:before {
+  content: "";
+}
+.frydos-icon .fa-shekel-sign:before {
+  content: "";
+}
+.frydos-icon .fa-shield-alt:before {
+  content: "";
+}
+.frydos-icon .fa-shield-virus:before {
+  content: "";
+}
+.frydos-icon .fa-ship:before {
+  content: "";
+}
+.frydos-icon .fa-shipping-fast:before {
+  content: "";
+}
+.frydos-icon .fa-shirtsinbulk:before {
+  content: "";
+}
+.frydos-icon .fa-shoe-prints:before {
+  content: "";
+}
+.frydos-icon .fa-shopify:before {
+  content: "";
+}
+.frydos-icon .fa-shopping-bag:before {
+  content: "";
+}
+.frydos-icon .fa-shopping-basket:before {
+  content: "";
+}
+.frydos-icon .fa-shopping-cart:before {
+  content: "";
+}
+.frydos-icon .fa-shopware:before {
+  content: "";
+}
+.frydos-icon .fa-shower:before {
+  content: "";
+}
+.frydos-icon .fa-shuttle-van:before {
+  content: "";
+}
+.frydos-icon .fa-sign:before {
+  content: "";
+}
+.frydos-icon .fa-sign-in-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sign-language:before {
+  content: "";
+}
+.frydos-icon .fa-sign-out-alt:before {
+  content: "";
+}
+.frydos-icon .fa-signal:before {
+  content: "";
+}
+.frydos-icon .fa-signature:before {
+  content: "";
+}
+.frydos-icon .fa-sim-card:before {
+  content: "";
+}
+.frydos-icon .fa-simplybuilt:before {
+  content: "";
+}
+.frydos-icon .fa-sink:before {
+  content: "";
+}
+.frydos-icon .fa-sistrix:before {
+  content: "";
+}
+.frydos-icon .fa-sitemap:before {
+  content: "";
+}
+.frydos-icon .fa-sith:before {
+  content: "";
+}
+.frydos-icon .fa-skating:before {
+  content: "";
+}
+.frydos-icon .fa-sketch:before {
+  content: "";
+}
+.frydos-icon .fa-skiing:before {
+  content: "";
+}
+.frydos-icon .fa-skiing-nordic:before {
+  content: "";
+}
+.frydos-icon .fa-skull:before {
+  content: "";
+}
+.frydos-icon .fa-skull-crossbones:before {
+  content: "";
+}
+.frydos-icon .fa-skyatlas:before {
+  content: "";
+}
+.frydos-icon .fa-skype:before {
+  content: "";
+}
+.frydos-icon .fa-slack:before {
+  content: "";
+}
+.frydos-icon .fa-slack-hash:before {
+  content: "";
+}
+.frydos-icon .fa-slash:before {
+  content: "";
+}
+.frydos-icon .fa-sleigh:before {
+  content: "";
+}
+.frydos-icon .fa-sliders-h:before {
+  content: "";
+}
+.frydos-icon .fa-slideshare:before {
+  content: "";
+}
+.frydos-icon .fa-smile:before {
+  content: "";
+}
+.frydos-icon .fa-smile-beam:before {
+  content: "";
+}
+.frydos-icon .fa-smile-wink:before {
+  content: "";
+}
+.frydos-icon .fa-smog:before {
+  content: "";
+}
+.frydos-icon .fa-smoking:before {
+  content: "";
+}
+.frydos-icon .fa-smoking-ban:before {
+  content: "";
+}
+.frydos-icon .fa-sms:before {
+  content: "";
+}
+.frydos-icon .fa-snapchat:before {
+  content: "";
+}
+.frydos-icon .fa-snapchat-ghost:before {
+  content: "";
+}
+.frydos-icon .fa-snapchat-square:before {
+  content: "";
+}
+.frydos-icon .fa-snowboarding:before {
+  content: "";
+}
+.frydos-icon .fa-snowflake:before {
+  content: "";
+}
+.frydos-icon .fa-snowman:before {
+  content: "";
+}
+.frydos-icon .fa-snowplow:before {
+  content: "";
+}
+.frydos-icon .fa-soap:before {
+  content: "";
+}
+.frydos-icon .fa-socks:before {
+  content: "";
+}
+.frydos-icon .fa-solar-panel:before {
+  content: "";
+}
+.frydos-icon .fa-sort:before {
+  content: "";
+}
+.frydos-icon .fa-sort-alpha-down:before {
+  content: "";
+}
+.frydos-icon .fa-sort-alpha-down-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sort-alpha-up:before {
+  content: "";
+}
+.frydos-icon .fa-sort-alpha-up-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sort-amount-down:before {
+  content: "";
+}
+.frydos-icon .fa-sort-amount-down-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sort-amount-up:before {
+  content: "";
+}
+.frydos-icon .fa-sort-amount-up-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sort-down:before {
+  content: "";
+}
+.frydos-icon .fa-sort-numeric-down:before {
+  content: "";
+}
+.frydos-icon .fa-sort-numeric-down-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sort-numeric-up:before {
+  content: "";
+}
+.frydos-icon .fa-sort-numeric-up-alt:before {
+  content: "";
+}
+.frydos-icon .fa-sort-up:before {
+  content: "";
+}
+.frydos-icon .fa-soundcloud:before {
+  content: "";
+}
+.frydos-icon .fa-sourcetree:before {
+  content: "";
+}
+.frydos-icon .fa-spa:before {
+  content: "";
+}
+.frydos-icon .fa-space-shuttle:before {
+  content: "";
+}
+.frydos-icon .fa-speakap:before {
+  content: "";
+}
+.frydos-icon .fa-speaker-deck:before {
+  content: "";
+}
+.frydos-icon .fa-spell-check:before {
+  content: "";
+}
+.frydos-icon .fa-spider:before {
+  content: "";
+}
+.frydos-icon .fa-spinner:before {
+  content: "";
+}
+.frydos-icon .fa-splotch:before {
+  content: "";
+}
+.frydos-icon .fa-spotify:before {
+  content: "";
+}
+.frydos-icon .fa-spray-can:before {
+  content: "";
+}
+.frydos-icon .fa-square:before {
+  content: "";
+}
+.frydos-icon .fa-square-full:before {
+  content: "";
+}
+.frydos-icon .fa-square-root-alt:before {
+  content: "";
+}
+.frydos-icon .fa-squarespace:before {
+  content: "";
+}
+.frydos-icon .fa-stack-exchange:before {
+  content: "";
+}
+.frydos-icon .fa-stack-overflow:before {
+  content: "";
+}
+.frydos-icon .fa-stackpath:before {
+  content: "";
+}
+.frydos-icon .fa-stamp:before {
+  content: "";
+}
+.frydos-icon .fa-star:before {
+  content: "";
+}
+.frydos-icon .fa-star-and-crescent:before {
+  content: "";
+}
+.frydos-icon .fa-star-half:before {
+  content: "";
+}
+.frydos-icon .fa-star-half-alt:before {
+  content: "";
+}
+.frydos-icon .fa-star-of-david:before {
+  content: "";
+}
+.frydos-icon .fa-star-of-life:before {
+  content: "";
+}
+.frydos-icon .fa-staylinked:before {
+  content: "";
+}
+.frydos-icon .fa-steam:before {
+  content: "";
+}
+.frydos-icon .fa-steam-square:before {
+  content: "";
+}
+.frydos-icon .fa-steam-symbol:before {
+  content: "";
+}
+.frydos-icon .fa-step-backward:before {
+  content: "";
+}
+.frydos-icon .fa-step-forward:before {
+  content: "";
+}
+.frydos-icon .fa-stethoscope:before {
+  content: "";
+}
+.frydos-icon .fa-sticker-mule:before {
+  content: "";
+}
+.frydos-icon .fa-sticky-note:before {
+  content: "";
+}
+.frydos-icon .fa-stop:before {
+  content: "";
+}
+.frydos-icon .fa-stop-circle:before {
+  content: "";
+}
+.frydos-icon .fa-stopwatch:before {
+  content: "";
+}
+.frydos-icon .fa-stopwatch-20:before {
+  content: "";
+}
+.frydos-icon .fa-store:before {
+  content: "";
+}
+.frydos-icon .fa-store-alt:before {
+  content: "";
+}
+.frydos-icon .fa-store-alt-slash:before {
+  content: "";
+}
+.frydos-icon .fa-store-slash:before {
+  content: "";
+}
+.frydos-icon .fa-strava:before {
+  content: "";
+}
+.frydos-icon .fa-stream:before {
+  content: "";
+}
+.frydos-icon .fa-street-view:before {
+  content: "";
+}
+.frydos-icon .fa-strikethrough:before {
+  content: "";
+}
+.frydos-icon .fa-stripe:before {
+  content: "";
+}
+.frydos-icon .fa-stripe-s:before {
+  content: "";
+}
+.frydos-icon .fa-stroopwafel:before {
+  content: "";
+}
+.frydos-icon .fa-studiovinari:before {
+  content: "";
+}
+.frydos-icon .fa-stumbleupon:before {
+  content: "";
+}
+.frydos-icon .fa-stumbleupon-circle:before {
+  content: "";
+}
+.frydos-icon .fa-subscript:before {
+  content: "";
+}
+.frydos-icon .fa-subway:before {
+  content: "";
+}
+.frydos-icon .fa-suitcase:before {
+  content: "";
+}
+.frydos-icon .fa-suitcase-rolling:before {
+  content: "";
+}
+.frydos-icon .fa-sun:before {
+  content: "";
+}
+.frydos-icon .fa-superpowers:before {
+  content: "";
+}
+.frydos-icon .fa-superscript:before {
+  content: "";
+}
+.frydos-icon .fa-supple:before {
+  content: "";
+}
+.frydos-icon .fa-surprise:before {
+  content: "";
+}
+.frydos-icon .fa-suse:before {
+  content: "";
+}
+.frydos-icon .fa-swatchbook:before {
+  content: "";
+}
+.frydos-icon .fa-swift:before {
+  content: "";
+}
+.frydos-icon .fa-swimmer:before {
+  content: "";
+}
+.frydos-icon .fa-swimming-pool:before {
+  content: "";
+}
+.frydos-icon .fa-symfony:before {
+  content: "";
+}
+.frydos-icon .fa-synagogue:before {
+  content: "";
+}
+.frydos-icon .fa-sync:before {
+  content: "";
+}
+.frydos-icon .fa-sync-alt:before {
+  content: "";
+}
+.frydos-icon .fa-syringe:before {
+  content: "";
+}
+.frydos-icon .fa-table:before {
+  content: "";
+}
+.frydos-icon .fa-table-tennis:before {
+  content: "";
+}
+.frydos-icon .fa-tablet:before {
+  content: "";
+}
+.frydos-icon .fa-tablet-alt:before {
+  content: "";
+}
+.frydos-icon .fa-tablets:before {
+  content: "";
+}
+.frydos-icon .fa-tachometer-alt:before {
+  content: "";
+}
+.frydos-icon .fa-tag:before {
+  content: "";
+}
+.frydos-icon .fa-tags:before {
+  content: "";
+}
+.frydos-icon .fa-tape:before {
+  content: "";
+}
+.frydos-icon .fa-tasks:before {
+  content: "";
+}
+.frydos-icon .fa-taxi:before {
+  content: "";
+}
+.frydos-icon .fa-teamspeak:before {
+  content: "";
+}
+.frydos-icon .fa-teeth:before {
+  content: "";
+}
+.frydos-icon .fa-teeth-open:before {
+  content: "";
+}
+.frydos-icon .fa-telegram:before {
+  content: "";
+}
+.frydos-icon .fa-telegram-plane:before {
+  content: "";
+}
+.frydos-icon .fa-temperature-high:before {
+  content: "";
+}
+.frydos-icon .fa-temperature-low:before {
+  content: "";
+}
+.frydos-icon .fa-tencent-weibo:before {
+  content: "";
+}
+.frydos-icon .fa-tenge:before {
+  content: "";
+}
+.frydos-icon .fa-terminal:before {
+  content: "";
+}
+.frydos-icon .fa-text-height:before {
+  content: "";
+}
+.frydos-icon .fa-text-width:before {
+  content: "";
+}
+.frydos-icon .fa-th:before {
+  content: "";
+}
+.frydos-icon .fa-th-large:before {
+  content: "";
+}
+.frydos-icon .fa-th-list:before {
+  content: "";
+}
+.frydos-icon .fa-the-red-yeti:before {
+  content: "";
+}
+.frydos-icon .fa-theater-masks:before {
+  content: "";
+}
+.frydos-icon .fa-themeco:before {
+  content: "";
+}
+.frydos-icon .fa-themeisle:before {
+  content: "";
+}
+.frydos-icon .fa-thermometer:before {
+  content: "";
+}
+.frydos-icon .fa-thermometer-empty:before {
+  content: "";
+}
+.frydos-icon .fa-thermometer-full:before {
+  content: "";
+}
+.frydos-icon .fa-thermometer-half:before {
+  content: "";
+}
+.frydos-icon .fa-thermometer-quarter:before {
+  content: "";
+}
+.frydos-icon .fa-thermometer-three-quarters:before {
+  content: "";
+}
+.frydos-icon .fa-think-peaks:before {
+  content: "";
+}
+.frydos-icon .fa-thumbs-down:before {
+  content: "";
+}
+.frydos-icon .fa-thumbs-up:before {
+  content: "";
+}
+.frydos-icon .fa-thumbtack:before {
+  content: "";
+}
+.frydos-icon .fa-ticket-alt:before {
+  content: "";
+}
+.frydos-icon .fa-tiktok:before {
+  content: "";
+}
+.frydos-icon .fa-times:before {
+  content: "";
+}
+.frydos-icon .fa-times-circle:before {
+  content: "";
+}
+.frydos-icon .fa-tint:before {
+  content: "";
+}
+.frydos-icon .fa-tint-slash:before {
+  content: "";
+}
+.frydos-icon .fa-tired:before {
+  content: "";
+}
+.frydos-icon .fa-toggle-off:before {
+  content: "";
+}
+.frydos-icon .fa-toggle-on:before {
+  content: "";
+}
+.frydos-icon .fa-toilet:before {
+  content: "";
+}
+.frydos-icon .fa-toilet-paper:before {
+  content: "";
+}
+.frydos-icon .fa-toilet-paper-slash:before {
+  content: "";
+}
+.frydos-icon .fa-toolbox:before {
+  content: "";
+}
+.frydos-icon .fa-tools:before {
+  content: "";
+}
+.frydos-icon .fa-tooth:before {
+  content: "";
+}
+.frydos-icon .fa-torah:before {
+  content: "";
+}
+.frydos-icon .fa-torii-gate:before {
+  content: "";
+}
+.frydos-icon .fa-tractor:before {
+  content: "";
+}
+.frydos-icon .fa-trade-federation:before {
+  content: "";
+}
+.frydos-icon .fa-trademark:before {
+  content: "";
+}
+.frydos-icon .fa-traffic-light:before {
+  content: "";
+}
+.frydos-icon .fa-trailer:before {
+  content: "";
+}
+.frydos-icon .fa-train:before {
+  content: "";
+}
+.frydos-icon .fa-tram:before {
+  content: "";
+}
+.frydos-icon .fa-transgender:before {
+  content: "";
+}
+.frydos-icon .fa-transgender-alt:before {
+  content: "";
+}
+.frydos-icon .fa-trash:before {
+  content: "";
+}
+.frydos-icon .fa-trash-alt:before {
+  content: "";
+}
+.frydos-icon .fa-trash-restore:before {
+  content: "";
+}
+.frydos-icon .fa-trash-restore-alt:before {
+  content: "";
+}
+.frydos-icon .fa-tree:before {
+  content: "";
+}
+.frydos-icon .fa-trello:before {
+  content: "";
+}
+.frydos-icon .fa-tripadvisor:before {
+  content: "";
+}
+.frydos-icon .fa-trophy:before {
+  content: "";
+}
+.frydos-icon .fa-truck:before {
+  content: "";
+}
+.frydos-icon .fa-truck-loading:before {
+  content: "";
+}
+.frydos-icon .fa-truck-monster:before {
+  content: "";
+}
+.frydos-icon .fa-truck-moving:before {
+  content: "";
+}
+.frydos-icon .fa-truck-pickup:before {
+  content: "";
+}
+.frydos-icon .fa-tshirt:before {
+  content: "";
+}
+.frydos-icon .fa-tty:before {
+  content: "";
+}
+.frydos-icon .fa-tumblr:before {
+  content: "";
+}
+.frydos-icon .fa-tumblr-square:before {
+  content: "";
+}
+.frydos-icon .fa-tv:before {
+  content: "";
+}
+.frydos-icon .fa-twitch:before {
+  content: "";
+}
+.frydos-icon .fa-twitter:before {
+  content: "";
+}
+.frydos-icon .fa-twitter-square:before {
+  content: "";
+}
+.frydos-icon .fa-typo3:before {
+  content: "";
+}
+.frydos-icon .fa-uber:before {
+  content: "";
+}
+.frydos-icon .fa-ubuntu:before {
+  content: "";
+}
+.frydos-icon .fa-uikit:before {
+  content: "";
+}
+.frydos-icon .fa-umbraco:before {
+  content: "";
+}
+.frydos-icon .fa-umbrella:before {
+  content: "";
+}
+.frydos-icon .fa-umbrella-beach:before {
+  content: "";
+}
+.frydos-icon .fa-uncharted:before {
+  content: "";
+}
+.frydos-icon .fa-underline:before {
+  content: "";
+}
+.frydos-icon .fa-undo:before {
+  content: "";
+}
+.frydos-icon .fa-undo-alt:before {
+  content: "";
+}
+.frydos-icon .fa-uniregistry:before {
+  content: "";
+}
+.frydos-icon .fa-unity:before {
+  content: "";
+}
+.frydos-icon .fa-universal-access:before {
+  content: "";
+}
+.frydos-icon .fa-university:before {
+  content: "";
+}
+.frydos-icon .fa-unlink:before {
+  content: "";
+}
+.frydos-icon .fa-unlock:before {
+  content: "";
+}
+.frydos-icon .fa-unlock-alt:before {
+  content: "";
+}
+.frydos-icon .fa-unsplash:before {
+  content: "";
+}
+.frydos-icon .fa-untappd:before {
+  content: "";
+}
+.frydos-icon .fa-upload:before {
+  content: "";
+}
+.frydos-icon .fa-ups:before {
+  content: "";
+}
+.frydos-icon .fa-usb:before {
+  content: "";
+}
+.frydos-icon .fa-user:before {
+  content: "";
+}
+.frydos-icon .fa-user-alt:before {
+  content: "";
+}
+.frydos-icon .fa-user-alt-slash:before {
+  content: "";
+}
+.frydos-icon .fa-user-astronaut:before {
+  content: "";
+}
+.frydos-icon .fa-user-check:before {
+  content: "";
+}
+.frydos-icon .fa-user-circle:before {
+  content: "";
+}
+.frydos-icon .fa-user-clock:before {
+  content: "";
+}
+.frydos-icon .fa-user-cog:before {
+  content: "";
+}
+.frydos-icon .fa-user-edit:before {
+  content: "";
+}
+.frydos-icon .fa-user-friends:before {
+  content: "";
+}
+.frydos-icon .fa-user-graduate:before {
+  content: "";
+}
+.frydos-icon .fa-user-injured:before {
+  content: "";
+}
+.frydos-icon .fa-user-lock:before {
+  content: "";
+}
+.frydos-icon .fa-user-md:before {
+  content: "";
+}
+.frydos-icon .fa-user-minus:before {
+  content: "";
+}
+.frydos-icon .fa-user-ninja:before {
+  content: "";
+}
+.frydos-icon .fa-user-nurse:before {
+  content: "";
+}
+.frydos-icon .fa-user-plus:before {
+  content: "";
+}
+.frydos-icon .fa-user-secret:before {
+  content: "";
+}
+.frydos-icon .fa-user-shield:before {
+  content: "";
+}
+.frydos-icon .fa-user-slash:before {
+  content: "";
+}
+.frydos-icon .fa-user-tag:before {
+  content: "";
+}
+.frydos-icon .fa-user-tie:before {
+  content: "";
+}
+.frydos-icon .fa-user-times:before {
+  content: "";
+}
+.frydos-icon .fa-users:before {
+  content: "";
+}
+.frydos-icon .fa-users-cog:before {
+  content: "";
+}
+.frydos-icon .fa-users-slash:before {
+  content: "";
+}
+.frydos-icon .fa-usps:before {
+  content: "";
+}
+.frydos-icon .fa-ussunnah:before {
+  content: "";
+}
+.frydos-icon .fa-utensil-spoon:before {
+  content: "";
+}
+.frydos-icon .fa-utensils:before {
+  content: "";
+}
+.frydos-icon .fa-vaadin:before {
+  content: "";
+}
+.frydos-icon .fa-vector-square:before {
+  content: "";
+}
+.frydos-icon .fa-venus:before {
+  content: "";
+}
+.frydos-icon .fa-venus-double:before {
+  content: "";
+}
+.frydos-icon .fa-venus-mars:before {
+  content: "";
+}
+.frydos-icon .fa-vest:before {
+  content: "";
+}
+.frydos-icon .fa-vest-patches:before {
+  content: "";
+}
+.frydos-icon .fa-viacoin:before {
+  content: "";
+}
+.frydos-icon .fa-viadeo:before {
+  content: "";
+}
+.frydos-icon .fa-viadeo-square:before {
+  content: "";
+}
+.frydos-icon .fa-vial:before {
+  content: "";
+}
+.frydos-icon .fa-vials:before {
+  content: "";
+}
+.frydos-icon .fa-viber:before {
+  content: "";
+}
+.frydos-icon .fa-video:before {
+  content: "";
+}
+.frydos-icon .fa-video-slash:before {
+  content: "";
+}
+.frydos-icon .fa-vihara:before {
+  content: "";
+}
+.frydos-icon .fa-vimeo:before {
+  content: "";
+}
+.frydos-icon .fa-vimeo-square:before {
+  content: "";
+}
+.frydos-icon .fa-vimeo-v:before {
+  content: "";
+}
+.frydos-icon .fa-vine:before {
+  content: "";
+}
+.frydos-icon .fa-virus:before {
+  content: "";
+}
+.frydos-icon .fa-virus-slash:before {
+  content: "";
+}
+.frydos-icon .fa-viruses:before {
+  content: "";
+}
+.frydos-icon .fa-vk:before {
+  content: "";
+}
+.frydos-icon .fa-vnv:before {
+  content: "";
+}
+.frydos-icon .fa-voicemail:before {
+  content: "";
+}
+.frydos-icon .fa-volleyball-ball:before {
+  content: "";
+}
+.frydos-icon .fa-volume-down:before {
+  content: "";
+}
+.frydos-icon .fa-volume-mute:before {
+  content: "";
+}
+.frydos-icon .fa-volume-off:before {
+  content: "";
+}
+.frydos-icon .fa-volume-up:before {
+  content: "";
+}
+.frydos-icon .fa-vote-yea:before {
+  content: "";
+}
+.frydos-icon .fa-vr-cardboard:before {
+  content: "";
+}
+.frydos-icon .fa-vuejs:before {
+  content: "";
+}
+.frydos-icon .fa-walking:before {
+  content: "";
+}
+.frydos-icon .fa-wallet:before {
+  content: "";
+}
+.frydos-icon .fa-warehouse:before {
+  content: "";
+}
+.frydos-icon .fa-watchman-monitoring:before {
+  content: "";
+}
+.frydos-icon .fa-water:before {
+  content: "";
+}
+.frydos-icon .fa-wave-square:before {
+  content: "";
+}
+.frydos-icon .fa-waze:before {
+  content: "";
+}
+.frydos-icon .fa-weebly:before {
+  content: "";
+}
+.frydos-icon .fa-weibo:before {
+  content: "";
+}
+.frydos-icon .fa-weight:before {
+  content: "";
+}
+.frydos-icon .fa-weight-hanging:before {
+  content: "";
+}
+.frydos-icon .fa-weixin:before {
+  content: "";
+}
+.frydos-icon .fa-whatsapp:before {
+  content: "";
+}
+.frydos-icon .fa-whatsapp-square:before {
+  content: "";
+}
+.frydos-icon .fa-wheelchair:before {
+  content: "";
+}
+.frydos-icon .fa-whmcs:before {
+  content: "";
+}
+.frydos-icon .fa-wifi:before {
+  content: "";
+}
+.frydos-icon .fa-wikipedia-w:before {
+  content: "";
+}
+.frydos-icon .fa-wind:before {
+  content: "";
+}
+.frydos-icon .fa-window-close:before {
+  content: "";
+}
+.frydos-icon .fa-window-maximize:before {
+  content: "";
+}
+.frydos-icon .fa-window-minimize:before {
+  content: "";
+}
+.frydos-icon .fa-window-restore:before {
+  content: "";
+}
+.frydos-icon .fa-windows:before {
+  content: "";
+}
+.frydos-icon .fa-wine-bottle:before {
+  content: "";
+}
+.frydos-icon .fa-wine-glass:before {
+  content: "";
+}
+.frydos-icon .fa-wine-glass-alt:before {
+  content: "";
+}
+.frydos-icon .fa-wix:before {
+  content: "";
+}
+.frydos-icon .fa-wizards-of-the-coast:before {
+  content: "";
+}
+.frydos-icon .fa-wodu:before {
+  content: "";
+}
+.frydos-icon .fa-wolf-pack-battalion:before {
+  content: "";
+}
+.frydos-icon .fa-won-sign:before {
+  content: "";
+}
+.frydos-icon .fa-wordpress:before {
+  content: "";
+}
+.frydos-icon .fa-wordpress-simple:before {
+  content: "";
+}
+.frydos-icon .fa-wpbeginner:before {
+  content: "";
+}
+.frydos-icon .fa-wpexplorer:before {
+  content: "";
+}
+.frydos-icon .fa-wpforms:before {
+  content: "";
+}
+.frydos-icon .fa-wpressr:before {
+  content: "";
+}
+.frydos-icon .fa-wrench:before {
+  content: "";
+}
+.frydos-icon .fa-x-ray:before {
+  content: "";
+}
+.frydos-icon .fa-xbox:before {
+  content: "";
+}
+.frydos-icon .fa-xing:before {
+  content: "";
+}
+.frydos-icon .fa-xing-square:before {
+  content: "";
+}
+.frydos-icon .fa-y-combinator:before {
+  content: "";
+}
+.frydos-icon .fa-yahoo:before {
+  content: "";
+}
+.frydos-icon .fa-yammer:before {
+  content: "";
+}
+.frydos-icon .fa-yandex:before {
+  content: "";
+}
+.frydos-icon .fa-yandex-international:before {
+  content: "";
+}
+.frydos-icon .fa-yarn:before {
+  content: "";
+}
+.frydos-icon .fa-yelp:before {
+  content: "";
+}
+.frydos-icon .fa-yen-sign:before {
+  content: "";
+}
+.frydos-icon .fa-yin-yang:before {
+  content: "";
+}
+.frydos-icon .fa-yoast:before {
+  content: "";
+}
+.frydos-icon .fa-youtube:before {
+  content: "";
+}
+.frydos-icon .fa-youtube-square:before {
+  content: "";
+}
+.frydos-icon .fa-zhihu:before {
+  content: "";
+}
+.frydos-icon .sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.frydos-icon .sr-only-focusable:active, .frydos-icon .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fa-brands-400.eot");
+    src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+.frydos-icon .fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fa-regular-400.eot");
+    src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.frydos-icon .far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../fonts/fa-solid-900.eot");
+    src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+.frydos-icon .fa,
+.frydos-icon .fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

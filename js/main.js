@@ -67,6 +67,7 @@ class FryDos {
         this.contact = this.getCookie("frydos-client-cookie");
         const locationUrl = window.location.href;
         console.log(this.contact);
+        this.selector.innerHTML = "<div class='loader'></div>";
         if (this.contact === null || this.contact === "undefined") {
             await this.createContact();
         }
