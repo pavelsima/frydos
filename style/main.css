@@ -56,6 +56,37 @@
     -webkit-animation: frydos-spin 2s linear infinite; /* Safari */
     animation: frydos-spin 2s linear infinite;
   }
+  .frydos-btn {
+    background: #888888;
+    padding: 15px 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+    color: #ffffff;
+  }
+  .frydos-btn:hover {
+    cursor: pointer;
+    background: #999999;
+  }
+  
+  .frydos-btn-green {
+    background: #77dd77;
+  }
+  .frydos-btn-green:hover {
+    background: #77d277;
+  }
+  .frydos-btn-red {
+    background: #ff6961;
+  }
+  .frydos-btn-red:hover {
+    background: #ff5961;
+  }
+  .frydos-btn i {
+    font-size: 25px;
+  }
+  .frydos-btn i.like-center {
+    position: relative;
+    bottom: -4px;
+  }
   
   /* Safari */
   @-webkit-keyframes frydos-spin {
