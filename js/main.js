@@ -6,14 +6,86 @@ class FryDos {
         this.id = surveyId;
         this.project = projectId;
         this.views = views;
+        this.views.push({html:"", type: "thankyou"});
         this.selector = selector;
         this.contact = null;
         this.submitedId = null;
-        this.submitedValue = null;
+        this.activeStep = {};
+        this.nextStep = {};
+        this.responseHTML = "";
         this.api = api;
     }
-    renderFirst() {
-        this.selector.innerHTML = this.views.first;
+    renderFirstStep() {
+        this.setStepDataById(this.views[0].id);
+        this.selector.innerHTML = this.activeStep.html;
+    }
+    renderNextStep() {
+        if (this.nextStep.type === "condition") {
+            const stepValue = this.submitedValues[this.nextStep.condition.what];
+            let result = null;
+
+            if (this.nextStep.condition.operator === "equal") {
+                result = stepValue === this.nextStep.condition.to;
+            } else if (this.nextStep.condition.operator === "not-equal") {
+                result = stepValue !== this.nextStep.condition.to;
+            } else if (this.nextStep.condition.operator === "less-than") {
+                result = stepValue < this.nextStep.condition.to;
+            } else if (this.nextStep.condition.operator === "more-than") {
+                result = stepValue > this.nextStep.condition.to;
+            }
+
+            const newStepId = result ? this.nextStep.trueList[0].id : this.nextStep.falseList[0].id;
+            this.setStepDataById(newStepId);
+        } else {
+            this.setStepDataById(this.nextStep.id);
+        }
+
+        this.selector.innerHTML = this.activeStep.html;
+    }
+    setStepDataById(id) {
+        this.views.forEach((view, i) => {
+            if (view.type === "condition") {
+                view.trueList.forEach(trueView => {
+                    if (trueList.id === id) {
+                        this.activeStep = trueView;
+                        this.nextStep = this.getNextStep(trueList, id, {view, i});
+                    }
+                });
+                view.falseList.forEach(falseView => {
+                    if (falseList.id === id) {
+                        this.activeStep = falseView;
+                        this.nextStep = this.getNextStep(falseList, id, {view, i});
+                    }
+                });
+            } else {
+                this.activeStep = view;
+                this.nextStep = this.getNextStep(this.views, id);
+            }
+        });
+    }
+    getNextStep(array, id, rootViewData = {}) {
+        const stepIndex = array.map(function (o) { return o.id; }).indexOf(id);
+        const nextStepIndex = stepIndex++;
+        if (array.length > nextStepIndex) {
+            return array[nextStepIndex];
+        }
+        return rootViewData.view[i++]
+    }
+    getNextStepById(id) {
+        this.views.forEach((view, it) => {
+            if (view.type === "condition") {
+                view.trueList.forEach((trueView, ib) => {
+                    if (trueList.id === id) {
+                        return trueList;
+                    }
+                });
+                view.falseList.forEach((falseView, ib) => {
+                    if (falseList.id === id) return falseList;
+                });
+            } else {
+                return view;
+            }
+        });
     }
     getBrowserId() {
         var Sys = {};
@@ -62,7 +134,7 @@ class FryDos {
         var match = document.cookie.match(new RegExp('(^| )' + cname + '=([^;]+)'));
         if (match) return match[2];
         return null;
-    }
+    },
     async submitSurvey(val, nextView) {
         this.contact = this.getCookie("frydos-client-cookie");
         const locationUrl = window.location.href;
@@ -94,8 +166,9 @@ class FryDos {
         });
         const result = await response.json();
         this.submitedId = result.id;
-        this.submitedValue = result.value;
-        this.views['thank-you'] = result.responseHTML;
+        this.submitedValues[this.activeView.id] = result.value;
+        this.renderNextStep();
+        this.responseHTML = result.responseHTML;
         this.selector.innerHTML = this.views[nextView];
     }
 }
