@@ -134,7 +134,7 @@ class FryDos {
         var match = document.cookie.match(new RegExp('(^| )' + cname + '=([^;]+)'));
         if (match) return match[2];
         return null;
-    },
+    }
     async submitSurvey(val, nextView) {
         this.contact = this.getCookie("frydos-client-cookie");
         const locationUrl = window.location.href;
