@@ -65,7 +65,8 @@ class FryDos {
     }
     getNextStep(array, id, rootViewData = {}) {
         const stepIndex = array.map(function (o) { return o.id; }).indexOf(id);
-        const nextStepIndex = stepIndex++;
+        console.log("stepIndex", stepIndex);
+        const nextStepIndex = stepIndex + 1;
         if (array.length > nextStepIndex) {
             return array[nextStepIndex];
         }
