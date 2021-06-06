@@ -9,7 +9,7 @@ class FryDos {
         this.views.push({html:"", type: "thankyou"});
         this.selector = selector;
         this.contact = null;
-        this.submitedId = null;
+        this.submitedValues = {};
         this.activeStep = {};
         this.nextStep = {};
         this.responseHTML = "";
@@ -20,6 +20,11 @@ class FryDos {
         this.selector.innerHTML = this.activeStep.html;
     }
     renderNextStep() {
+        if (!this.nextStep) {
+            this.selector.innerHTML = this.responseHTML;
+            return;
+        }
+        let nextStepId;
         if (this.nextStep.type === "condition") {
             const stepValue = this.submitedValues[this.nextStep.condition.what];
             let result = null;
@@ -34,43 +39,51 @@ class FryDos {
                 result = stepValue > this.nextStep.condition.to;
             }
 
-            const newStepId = result ? this.nextStep.trueList[0].id : this.nextStep.falseList[0].id;
-            this.setStepDataById(newStepId);
+            console.log(result, this.nextStep.condition)
+
+            const newStep = result ? this.nextStep.trueList[0] : this.nextStep.falseList[0];
+            nextStepId = newStep ? newStep.id : null;
         } else {
-            this.setStepDataById(this.nextStep.id);
+            nextStepId = this.nextStep.id;
         }
 
-        this.selector.innerHTML = this.activeStep.html;
+        if (nextStepId) {
+            this.setStepDataById(nextStepId);
+            this.selector.innerHTML = this.activeStep.html;
+        } else {
+            this.selector.innerHTML = this.responseHTML;
+        }
     }
     setStepDataById(id) {
         this.views.forEach((view, i) => {
             if (view.type === "condition") {
                 view.trueList.forEach(trueView => {
-                    if (trueList.id === id) {
+                    if (trueView.id === id) {
                         this.activeStep = trueView;
-                        this.nextStep = this.getNextStep(trueList, id, {view, i});
+                        this.nextStep = this.getNextStep(view.trueList, id, {view, i});
                     }
                 });
                 view.falseList.forEach(falseView => {
-                    if (falseList.id === id) {
+                    if (falseView.id === id) {
                         this.activeStep = falseView;
-                        this.nextStep = this.getNextStep(falseList, id, {view, i});
+                        this.nextStep = this.getNextStep(view.falseList, id, {view, i});
                     }
                 });
             } else {
-                this.activeStep = view;
-                this.nextStep = this.getNextStep(this.views, id);
+                if (view.id === id) {
+                    this.activeStep = view;
+                    this.nextStep = this.getNextStep(this.views, id);   
+                }
             }
         });
     }
     getNextStep(array, id, rootViewData = {}) {
         const stepIndex = array.map(function (o) { return o.id; }).indexOf(id);
-        console.log("stepIndex", stepIndex);
         const nextStepIndex = stepIndex + 1;
         if (array.length > nextStepIndex) {
             return array[nextStepIndex];
         }
-        return rootViewData.view[i++]
+        return rootViewData.view[rootViewData.i++]
     }
     getNextStepById(id) {
         this.views.forEach((view, it) => {
@@ -121,7 +134,6 @@ class FryDos {
             body: JSON.stringify(data)
         });
         const result = await response.json();
-        console.log(result);
         this.setCookie("frydos-client-cookie", result.id, 99);
         this.contact = result.id;
     }
@@ -136,10 +148,9 @@ class FryDos {
         if (match) return match[2];
         return null;
     }
-    async submitSurvey(val, nextView) {
+    async submitSurvey(val) {
         this.contact = this.getCookie("frydos-client-cookie");
         const locationUrl = window.location.href;
-        console.log(this.contact);
         this.selector.innerHTML = "<div class='frydos-loader'></div>";
         if (this.contact === null || this.contact === "undefined") {
             await this.createContact();
@@ -147,9 +158,8 @@ class FryDos {
         const data = {
             value: val,
             contact: this.contact,
-            survey: this.id,
-            url: locationUrl,
-            previousSubmit: this.submitedId || null
+            step: this.activeStep.id,
+            url: locationUrl
         }
         const url = `${this.api}/api/project/${projectID}/surveys/${frydosID}/submits/`;
         const response = await fetch(url, {
@@ -167,9 +177,9 @@ class FryDos {
         });
         const result = await response.json();
         this.submitedId = result.id;
-        this.submitedValues[this.activeView.id] = result.value;
+        this.submitedValues[this.activeStep.id] = result.value;
         this.renderNextStep();
         this.responseHTML = result.responseHTML;
-        this.selector.innerHTML = this.views[nextView];
+        this.renderNextStep();
     }
 }
