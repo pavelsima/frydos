@@ -39,8 +39,6 @@ class FryDos {
                 result = stepValue > this.nextStep.condition.to;
             }
 
-            console.log(result, this.nextStep.condition)
-
             const newStep = result ? this.nextStep.trueList[0] : this.nextStep.falseList[0];
             nextStepId = newStep ? newStep.id : null;
         } else {
